@@ -33,7 +33,7 @@ namespace Teste.View
 
         private void btnListarClientes_Click(object sender, RoutedEventArgs e)
         {
-            ListarCliente tela = new ListarCliente();
+            Listar tela = new Listar();
             tela.ShowDialog();
         }
 

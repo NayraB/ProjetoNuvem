@@ -114,8 +114,17 @@
     <Compile Include="View\ExcluirCliente.xaml.cs">
       <DependentUpon>ExcluirCliente.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\Listar.xaml.cs">
+      <DependentUpon>Listar.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\ListarCliente.xaml.cs">
       <DependentUpon>ListarCliente.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ListarTodos.xaml.cs">
+      <DependentUpon>ListarTodos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ListarVeiculo.xaml.cs">
+      <DependentUpon>ListarVeiculo.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\Principal.xaml.cs">
       <DependentUpon>Principal.xaml</DependentUpon>
@@ -191,7 +200,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\Listar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\ListarCliente.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ListarTodos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ListarVeiculo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

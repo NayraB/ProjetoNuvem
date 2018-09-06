@@ -29,6 +29,7 @@ namespace Teste.View
         private void btnCadastrarVeiculo_Click(object sender, RoutedEventArgs e)
         {
             if (!string.IsNullOrEmpty(txtModeloVeiculo.Text) && !string.IsNullOrEmpty(txtMarcaVeiculo.Text)
+                && !string.IsNullOrEmpty(txtAnoVeiculo.Text)
                 && !string.IsNullOrEmpty(txtCorVeiculo.Text) && !string.IsNullOrEmpty(txtPlacaVeiculo.Text))
             {
 
@@ -36,6 +37,7 @@ namespace Teste.View
                 {
                     ModeloVeiculo = txtModeloVeiculo.Text,
                     MarcaVeiculo = txtMarcaVeiculo.Text,
+                    AnoVeiculo = txtAnoVeiculo.Text,
                     CorVeiculo = txtCorVeiculo.Text,
                     PlacaVeiculo = txtPlacaVeiculo.Text
 
