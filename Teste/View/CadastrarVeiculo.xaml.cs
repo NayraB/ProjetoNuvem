@@ -67,7 +67,29 @@ namespace Teste.View
 
             }
             this.Close();
-        
-    }
+
+        }
+
+        private void cboCliente_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+            int idCliente = (int)cboCliente.SelectedValue;
+            Cliente cliente = ClienteDAO.BuscarClientePorId(idCliente);
+            txtNomeCliente.Text = cliente.NomeCliente;
+            txtSobrenomeCliente.Text = cliente.SobrenomeCliente;
+            txtCpfCliente.Text = cliente.CpfCliente;
+            txtTelefoneCliente.Text = cliente.TelefoneCliente;
+
+        }
+
+       
+        private void Window_Loaded_1(object sender, RoutedEventArgs e)
+        {
+            cboCliente.ItemsSource = ClienteDAO.RetornarCliente();
+            cboCliente.DisplayMemberPath = "NomeCliente";
+            // Caminho que vai ser acionado para o Selected Value
+            // Propriedade que vai ser utilizada quando meu Selected Value for acionado!!!!!!!!*********
+            cboCliente.SelectedValuePath = "IdCliente";
+        }
     }
 }
