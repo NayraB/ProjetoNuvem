@@ -1,0 +1,17 @@
+﻿<Window x:Class="Teste.View.ExcluirCliente"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Teste.View"
+        mc:Ignorable="d"
+        Title="Excluir Cliente" Height="179.104" Width="296.567" Loaded="Window_Loaded">
+    <Grid>
+        <ComboBox 
+            x:Name="cboListarCliente" HorizontalAlignment="Left" 
+            Margin="10,49,0,0" VerticalAlignment="Top" Width="267" Height="37">
+        </ComboBox>
+        <Label Content="Selecione o cliente que deseja excluir:" HorizontalAlignment="Left" Margin="10,18,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnExcluirCliente" Content="Excluir" Click="btnExcluirCliente_Click" Margin="186,106,14,10"/>
+    </Grid>
+</Window>
