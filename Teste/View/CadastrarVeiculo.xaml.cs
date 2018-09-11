@@ -35,12 +35,14 @@ namespace Teste.View
 
                 Veiculo veiculo = new Veiculo
                 {
+                    IdCliente =  int.Parse(cboCliente.SelectedValue.ToString()),
+                    //IdCliente = int.Parse(txtNomeCliente.Text),
                     ModeloVeiculo = txtModeloVeiculo.Text,
                     MarcaVeiculo = txtMarcaVeiculo.Text,
                     AnoVeiculo = txtAnoVeiculo.Text,
                     CorVeiculo = txtCorVeiculo.Text,
                     PlacaVeiculo = txtPlacaVeiculo.Text
-
+                    
 
                 };
 

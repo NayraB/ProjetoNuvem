@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="ListarVeiculo" Height="300" Width="592.808" Loaded="Window_Loaded">
     <Grid Margin="0,0,2,17">
-        <DataGrid CanUserAddRows="False" IsReadOnly="True" HorizontalAlignment="Left" x:Name="dtgridCliente" Height="249" Margin="10,10,0,0" VerticalAlignment="Top" Width="565"/>
+        <DataGrid CanUserAddRows="False" IsReadOnly="True" HorizontalAlignment="Left" x:Name="dtgridVeiculo" Height="249" Margin="10,10,0,0" VerticalAlignment="Top" Width="565"/>
 
     </Grid>
 </Window>
