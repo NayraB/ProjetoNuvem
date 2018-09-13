@@ -115,8 +115,14 @@
     <Compile Include="View\EditarVeiculo.xaml.cs">
       <DependentUpon>EditarVeiculo.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\Excluir.xaml.cs">
+      <DependentUpon>Excluir.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\ExcluirCliente.xaml.cs">
       <DependentUpon>ExcluirCliente.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ExcluirVeiculo.xaml.cs">
+      <DependentUpon>ExcluirVeiculo.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\Listar.xaml.cs">
       <DependentUpon>Listar.xaml</DependentUpon>
@@ -203,7 +209,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\Excluir.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\ExcluirCliente.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ExcluirVeiculo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

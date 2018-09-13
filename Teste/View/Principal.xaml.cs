@@ -39,7 +39,7 @@ namespace Teste.View
 
         private void btnExcluirCliente_Click(object sender, RoutedEventArgs e)
         {
-            ExcluirCliente tela = new ExcluirCliente();
+            Excluir tela = new Excluir();
             tela.ShowDialog();
         }
 

@@ -9,7 +9,7 @@
     <Grid Margin="0,0,15,8">
         <Button x:Name="btnCadastrar" Content="Cadastrar" HorizontalAlignment="Left" Margin="34,10,0,0" VerticalAlignment="Top" Width="127" Click="btnCadastrarCliente_Click" Height="58"/>
         <Button x:Name="btnListar" Content="Listar" HorizontalAlignment="Left" Margin="34,93,0,0" VerticalAlignment="Top" Width="127" Click="btnListarClientes_Click" Height="58"/>
-        <Button x:Name="btnExcluirCliente" Content="Excluir Cliente" HorizontalAlignment="Left" Margin="213,10,0,0" VerticalAlignment="Top" Width="127" Click="btnExcluirCliente_Click" Height="58"/>
+        <Button x:Name="btnExcluir" Content="Excluir" HorizontalAlignment="Left" Margin="213,10,0,0" VerticalAlignment="Top" Width="127" Click="btnExcluirCliente_Click" Height="58"/>
         <Button x:Name="btnEditarCliente" Content="Editar Cliente" HorizontalAlignment="Left" Margin="213,93,0,0" VerticalAlignment="Top" Width="127" Click="btnEditarCliente_Click" Height="58"/>
 
     </Grid>
