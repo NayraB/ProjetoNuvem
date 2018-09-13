@@ -21,5 +21,13 @@ namespace Teste.DAL
             public DbSet<Veiculo> Veiculo { get; set; }
 
         //public object Veiculo { get; internal set; }
+
+        //protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        //{
+        //    modelBuilder.Entity<Cliente>()
+        //        .HasOptional<Veiculo>(s => s.Standard)
+        //        .WithMany()
+        //        .WillCascadeOnDelete(false);
+        //}
     }
 }

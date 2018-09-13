@@ -54,6 +54,20 @@ namespace Teste.DAL
             }
         }
 
+        public static void ExcluirVeiculosPorClienteID(int clienteID)
+        {
+            var veiculos = ctx.Veiculo.Where(v => v.IdCliente == clienteID);
+
+            foreach (Veiculo veic in veiculos)
+            {
+                ctx.Veiculo.Remove(veic);
+            }
+
+            ctx.SaveChanges();
+        }
+
+
+
         public static bool EditarVeiculo(Veiculo veiculoEditado)
         {
 

@@ -31,10 +31,11 @@ namespace Teste.View
         private void btnExcluirCliente_Click(object sender, RoutedEventArgs e)
         {
             int idCliente = (int)cboListarCliente.SelectedValue;
+           
             //Cliente cliente = ClienteDAO.BuscarClientePorId(IdCliente);
 
             // verifica se o metodo do ClienteDAO é verdadeiro
-            if (ClienteDAO.ExcluirCliente(idCliente)) {
+            if (ClienteDAO.ExcluirCliente(idCliente)){
 
                 MessageBox.Show("Cliente excluído com sucesso!",
                              "Loja",
@@ -46,7 +47,7 @@ namespace Teste.View
                 //MessageBox.Show(cliente.NomeCliente);
             } else
             {
-                MessageBox.Show("Cliente não foi excluído com sucesso!",
+                MessageBox.Show("Cliente não foi excluído!",
                             "Loja",
                             MessageBoxButton.OK,
                             MessageBoxImage.Error);
