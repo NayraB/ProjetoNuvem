@@ -28,9 +28,12 @@ namespace Teste.View
 
         private void btnCadastrarVeiculo_Click(object sender, RoutedEventArgs e)
         {
-            if (!string.IsNullOrEmpty(txtModeloVeiculo.Text) && !string.IsNullOrEmpty(txtMarcaVeiculo.Text)
+            if (!string.IsNullOrEmpty(txtModeloVeiculo.Text) 
+                && !string.IsNullOrEmpty(txtMarcaVeiculo.Text)
                 && !string.IsNullOrEmpty(txtAnoVeiculo.Text)
-                && !string.IsNullOrEmpty(txtCorVeiculo.Text) && !string.IsNullOrEmpty(txtPlacaVeiculo.Text))
+                && !string.IsNullOrEmpty(txtCorVeiculo.Text)
+                && !string.IsNullOrEmpty(txtEntradaVeiculo.Text)
+                && !string.IsNullOrEmpty(txtPlacaVeiculo.Text))
             {
 
                 Veiculo veiculo = new Veiculo
@@ -41,6 +44,7 @@ namespace Teste.View
                     MarcaVeiculo = txtMarcaVeiculo.Text,
                     AnoVeiculo = txtAnoVeiculo.Text,
                     CorVeiculo = txtCorVeiculo.Text,
+                    HoraEntrada = txtEntradaVeiculo.Text,
                     PlacaVeiculo = txtPlacaVeiculo.Text
                     
 

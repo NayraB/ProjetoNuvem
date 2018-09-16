@@ -20,8 +20,9 @@ namespace Teste.Model
         public string PlacaVeiculo { get; set; }
         public string AnoVeiculo { get; set; }
         public string CorVeiculo { get; set; }
+        public string HoraEntrada { get; set; }
 
-       
+
 
 
     }

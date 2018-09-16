@@ -7,15 +7,13 @@
         mc:Ignorable="d"
         Title="CadastrarVeiculo" Height="300.622" Width="484.255" Loaded="Window_Loaded_1">
     <Grid Margin="0,0,10,7">
-        <Label Content="Marca" HorizontalAlignment="Left" Margin="252,56,0,0" VerticalAlignment="Top"/>
+        <Label Content="Marca" HorizontalAlignment="Left" Margin="252,16,0,0" VerticalAlignment="Top"/>
         <Button x:Name="btnCadastrarVeiculo" Click="btnCadastrarVeiculo_Click" Content="Cadastrar" HorizontalAlignment="Left" Margin="304,220,0,0" VerticalAlignment="Top" Width="75" />
-        <TextBox x:Name="txtMarcaVeiculo" HorizontalAlignment="Left" Height="24" Margin="336,58,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtModeloVeiculo" HorizontalAlignment="Left" Height="22" Margin="336,98,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Modelo" HorizontalAlignment="Left" Margin="252,94,0,0" VerticalAlignment="Top"/>
-        <Label Content="Placa" HorizontalAlignment="Left" Margin="252,125,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtPlacaVeiculo" HorizontalAlignment="Left" Height="24" Margin="336,125,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Cor" HorizontalAlignment="Left" Margin="252,189,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtCorVeiculo" HorizontalAlignment="Left" Height="24" Margin="336,191,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtMarcaVeiculo" HorizontalAlignment="Left" Height="24" Margin="336,18,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtModeloVeiculo" HorizontalAlignment="Left" Height="22" Margin="336,47,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Modelo" HorizontalAlignment="Left" Margin="251,47,0,0" VerticalAlignment="Top"/>
+        <Label Content="Placa" HorizontalAlignment="Left" Margin="253,74,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtPlacaVeiculo" HorizontalAlignment="Left" Height="24" Margin="336,74,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <ComboBox x:Name="cboCliente" HorizontalAlignment="Left" Margin="116,19,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cboCliente_SelectionChanged" DisplayMemberPath="NomeCliente" SelectedValuePath="IdCliente" />
         <Label x:Name="lblCliente" Content="Procurar cliente" HorizontalAlignment="Left" Margin="10,15,0,0" VerticalAlignment="Top"/>
         <Label Content="Dados do cliente" HorizontalAlignment="Left" Margin="26,56,0,0" VerticalAlignment="Top"/>
@@ -27,8 +25,12 @@
         <TextBox x:Name="txtCpfCliente" IsReadOnly="True" HorizontalAlignment="Left" Height="24" Margin="100,162,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Label Content="Telefone" HorizontalAlignment="Left"  Margin="16,202,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtTelefoneCliente" IsReadOnly="True" HorizontalAlignment="Left" Height="24" Margin="100,204,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Ano" HorizontalAlignment="Left" Margin="252,154,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtAnoVeiculo" HorizontalAlignment="Left" Height="24" Margin="336,154,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Ano" HorizontalAlignment="Left" Margin="258,100,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtAnoVeiculo" HorizontalAlignment="Left" Height="24" Margin="336,103,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Cor" HorizontalAlignment="Left" Margin="258,126,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtCorVeiculo" HorizontalAlignment="Left" Height="24" Margin="336,132,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Entrada" HorizontalAlignment="Left" Margin="252,178,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtEntradaVeiculo" HorizontalAlignment="Left" Height="24" Margin="336,180,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>
