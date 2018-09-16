@@ -45,7 +45,7 @@ namespace Teste.View
 
         private void btnEditarCliente_Click(object sender, RoutedEventArgs e)
         {
-            EditarCliente tela = new EditarCliente();
+            Editar tela = new Editar();
             tela.ShowDialog();
         }
     }

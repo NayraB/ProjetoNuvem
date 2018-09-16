@@ -38,6 +38,7 @@ namespace Teste.View
             veiculoEditado.ModeloVeiculo = txtModeloVeiculo.Text;
             veiculoEditado.PlacaVeiculo = txtPlacaVeiculo.Text;
             veiculoEditado.CorVeiculo = txtCorVeiculo.Text;
+            veiculoEditado.HoraEntrada = txtEntradaVeiculo.Text;
             veiculoEditado.AnoVeiculo = txtAnoVeiculo.Text;
 
 
@@ -74,6 +75,7 @@ namespace Teste.View
             txtModeloVeiculo.Text = veiculo.ModeloVeiculo;
             txtPlacaVeiculo.Text = veiculo.PlacaVeiculo;
             txtCorVeiculo.Text = veiculo.CorVeiculo;
+            txtEntradaVeiculo.Text = veiculo.HoraEntrada;
             txtAnoVeiculo.Text = veiculo.AnoVeiculo;
         }
 
