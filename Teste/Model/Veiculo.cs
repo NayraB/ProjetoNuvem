@@ -14,13 +14,14 @@ namespace Teste.Model
         // colocar a chave secundária (vincular o cliente com o veiculo)
         [Key]
         public int IdVeiculo { get; set; }
+        public int IdCliente { get; set; }
         public string ModeloVeiculo { get; set; }
         public string MarcaVeiculo { get; set; }
         public string PlacaVeiculo { get; set; }
         public string AnoVeiculo { get; set; }
         public string CorVeiculo { get; set; }
 
-        public int IdCliente { get; set; }
+       
 
 
     }

@@ -9,11 +9,11 @@
     <Grid Margin="0,0,2,17">
         <DataGrid CanUserAddRows="False" IsReadOnly="True" HorizontalAlignment="Left" x:Name="dtgridVeiculo" Height="249" Margin="10,10,0,0" VerticalAlignment="Top" Width="565" AutoGenerateColumns="False">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Título" Binding="{Binding IdVeiculo}" Visibility="Hidden" />
-                <DataGridTextColumn Header="Título" Binding="{Binding ModeloVeiculo}" />
-                <DataGridTextColumn Header="Título" Binding="{Binding PlacaVeiculo}" />
-                <DataGridTextColumn Header="Título" Binding="{Binding AnoVeiculo}" />
-                <DataGridTextColumn Header="Título" Binding="{Binding CorVeiculo}" />
+                <DataGridTextColumn Header="ID" Binding="{Binding IdVeiculo}" Visibility="Hidden" />
+                <DataGridTextColumn Header="Modelo" Binding="{Binding ModeloVeiculo}" />
+                <DataGridTextColumn Header="Placa" Binding="{Binding PlacaVeiculo}" />
+                <DataGridTextColumn Header="Ano" Binding="{Binding AnoVeiculo}" />
+                <DataGridTextColumn Header="Cor" Binding="{Binding CorVeiculo}" />
             </DataGrid.Columns>
         </DataGrid>
 
