@@ -21,6 +21,8 @@ namespace Teste.Model
         public string AnoVeiculo { get; set; }
         public string CorVeiculo { get; set; }
         public string HoraEntrada { get; set; }
+        public string HoraSaida { get; set; }
+        public string Total { get; set; }
 
 
 
