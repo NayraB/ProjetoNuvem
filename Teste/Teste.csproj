@@ -101,6 +101,14 @@
     <Compile Include="Migrations\201809160248078_AdcCampoNoVeiculo.Designer.cs">
       <DependentUpon>201809160248078_AdcCampoNoVeiculo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201809181348276_AdcHoraSaidaNoVeiculo.cs" />
+    <Compile Include="Migrations\201809181348276_AdcHoraSaidaNoVeiculo.Designer.cs">
+      <DependentUpon>201809181348276_AdcHoraSaidaNoVeiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809181412265_AdcTotalNoVeiculo.cs" />
+    <Compile Include="Migrations\201809181412265_AdcTotalNoVeiculo.Designer.cs">
+      <DependentUpon>201809181412265_AdcTotalNoVeiculo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Cliente.cs" />
     <Compile Include="Model\Veiculo.cs" />
@@ -112,6 +120,9 @@
     </Compile>
     <Compile Include="View\CadastrarVeiculo.xaml.cs">
       <DependentUpon>CadastrarVeiculo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Controle.xaml.cs">
+      <DependentUpon>Controle.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\Editar.xaml.cs">
       <DependentUpon>Editar.xaml</DependentUpon>
@@ -185,6 +196,12 @@
     <EmbeddedResource Include="Migrations\201809160248078_AdcCampoNoVeiculo.resx">
       <DependentUpon>201809160248078_AdcCampoNoVeiculo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809181348276_AdcHoraSaidaNoVeiculo.resx">
+      <DependentUpon>201809181348276_AdcHoraSaidaNoVeiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809181412265_AdcTotalNoVeiculo.resx">
+      <DependentUpon>201809181412265_AdcTotalNoVeiculo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -208,6 +225,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\CadastrarVeiculo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Controle.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

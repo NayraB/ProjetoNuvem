@@ -53,5 +53,16 @@ namespace Teste.View
         {
             Environment.Exit(0);
         }
+
+        private void btnControle_Click(object sender, RoutedEventArgs e)
+        {
+            Controle tela = new Controle();
+            tela.ShowDialog();
+        }
+
+        private void btnServicos_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
