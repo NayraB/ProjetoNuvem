@@ -5,14 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Teste.View"
         mc:Ignorable="d"
-        Title="Excluir Cliente" Height="179.104" Width="296.567" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">
+        Title="Excluir Cliente" Height="356.104" Width="296.567" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">
     <Grid>
         <ComboBox 
             x:Name="cboListarVeiculo" HorizontalAlignment="Left" 
-            Margin="10,49,0,0" VerticalAlignment="Top" Width="267" Height="37">
+            Margin="10,49,0,0" VerticalAlignment="Top" Width="267" Height="37" SelectionChanged="cboListarVeiculo_SelectionChanged">
         </ComboBox>
         <Label Content="Selecione o veículo que deseja excluir:" HorizontalAlignment="Left" Margin="10,18,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btnExcluirVeiculo" Content="Excluir" Click="btnExcluirVeiculo_Click" Margin="186,106,14,10"/>
+        <Button x:Name="btnExcluirVeiculo" Content="Excluir" Click="btnExcluirVeiculo_Click" Margin="186,106,14,187"/>
         <Button x:Name="btn_voltar" Content="Voltar" HorizontalAlignment="Left" Margin="10,106,0,0" VerticalAlignment="Top" Width="89" Height="32" Click="btn_voltar_Click"/>
+        <Label x:Name="lblNomeCiente" Content="Nome" HorizontalAlignment="Left" Margin="56,179,0,0" VerticalAlignment="Top" Width="70"/>
+        <Label x:Name="lblNome" Content="Nome" HorizontalAlignment="Left" Margin="10,179,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label" Content="Label" HorizontalAlignment="Left" Margin="15,210,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1" Content="Label" HorizontalAlignment="Left" Margin="61,210,0,0" VerticalAlignment="Top" Width="65"/>
+        <Label x:Name="label2" Content="Label" HorizontalAlignment="Left" Margin="15,241,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label3" Content="Label" HorizontalAlignment="Left" Margin="61,241,0,0" VerticalAlignment="Top" Width="65"/>
+        <TextBox x:Name="txtNomeCarro" HorizontalAlignment="Left" Height="23" Margin="158,197,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
     </Grid>
 </Window>

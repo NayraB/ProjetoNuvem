@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Teste.DAL;
+using Teste.Model;
 
 namespace Teste.View
 {
@@ -56,6 +57,7 @@ namespace Teste.View
             }
         }
 
+
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             cboListarVeiculo.ItemsSource = VeiculoDAO.RetornarVeiculo();
@@ -66,6 +68,18 @@ namespace Teste.View
         private void btn_voltar_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
+        }
+
+        private void cboListarVeiculo_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            int idVeiculo = (int)cboListarVeiculo.SelectedValue;
+            Veiculo veiculo = VeiculoDAO.BuscarVeiculoPorId(idVeiculo);
+
+            lblNomeCiente.Content = veiculo.ModeloVeiculo;
+            txtNomeCarro.Text = veiculo.ModeloVeiculo;
+            txtSobrenomeCliente.Text = cliente.SobrenomeCliente;
+            txtCpfCliente.Text = cliente.CpfCliente;
+            txtTelefoneCliente.Text = cliente.TelefoneCliente;
         }
     }
 }
