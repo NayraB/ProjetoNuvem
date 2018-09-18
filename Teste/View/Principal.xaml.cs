@@ -48,5 +48,10 @@ namespace Teste.View
             Editar tela = new Editar();
             tela.ShowDialog();
         }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            Environment.Exit(0);
+        }
     }
 }

@@ -5,9 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Teste.View"
         mc:Ignorable="d"
-        Title="ListarTodos" Height="300" Width="592.808" Loaded="Window_Loaded">
+        Title="ListarTodos" Height="328.045" Width="592.808" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">
     <Grid Margin="0,0,2,17">
-        <DataGrid CanUserAddRows="False" IsReadOnly="True" HorizontalAlignment="Left" x:Name="dtgridTodos" Height="249" Margin="10,10,0,0" VerticalAlignment="Top" Width="565"/>
+        <DataGrid CanUserAddRows="False" IsReadOnly="True" HorizontalAlignment="Left" x:Name="dtgridTodos" Height="238" Margin="10,10,0,0" VerticalAlignment="Top" Width="565"/>
+        <Button x:Name="btn_voltar" Content="Voltar" HorizontalAlignment="Left" Height="25" Margin="210,263,0,-8" VerticalAlignment="Top" Width="179" RenderTransformOrigin="0.541,0.468" Click="btn_voltar_Click"/>
 
     </Grid>
 </Window>

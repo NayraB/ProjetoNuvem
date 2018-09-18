@@ -24,45 +24,52 @@ namespace Teste.View
         public CadastrarCliente()
         {
             InitializeComponent();
+        
         }
 
         private void btnCadastrarCliente_Click(object sender, RoutedEventArgs e)
         {
-            if (!string.IsNullOrEmpty(txtNomeCliente.Text) && !string.IsNullOrEmpty(txtSobrenomeCliente.Text) 
-                && !string.IsNullOrEmpty(txtTelefoneCliente.Text) && !string.IsNullOrEmpty(txtCpfCliente.Text)) { 
+            
+                if (!string.IsNullOrEmpty(txtNomeCliente.Text) && !string.IsNullOrEmpty(txtSobrenomeCliente.Text) 
+                    && !string.IsNullOrEmpty(txtTelefoneCliente.Text) && !string.IsNullOrEmpty(txtCpfCliente.Text)) {
 
                 Cliente cliente = new Cliente
-                {
-                    NomeCliente = txtNomeCliente.Text,
-                    SobrenomeCliente = txtSobrenomeCliente.Text,
-                    TelefoneCliente = txtTelefoneCliente.Text,
-                    CpfCliente = txtCpfCliente.Text              
+                    {
+                        NomeCliente = txtNomeCliente.Text,
+                        SobrenomeCliente = txtSobrenomeCliente.Text,
+                        TelefoneCliente = txtTelefoneCliente.Text,
+                        CpfCliente = txtCpfCliente.Text              
 
-                };
+                    };
 
-                if (ClienteDAO.CadastrarCliente(cliente))
-                {
-                    MessageBox.Show("Cliente cadastrado com sucesso!",
-                        "SGAutomotiva",
-                        MessageBoxButton.OK,
-                        MessageBoxImage.Information);
-                    this.Close();
+                    if (ClienteDAO.CadastrarCliente(cliente))
+                    {
+                        MessageBox.Show("Cliente cadastrado com sucesso!",
+                            "SGAutomotiva",
+                            MessageBoxButton.OK,
+                            MessageBoxImage.Information);
+                        this.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Cliente não cadastrado!",
+                            "SGAutomotiva",
+                            MessageBoxButton.OK,
+                            MessageBoxImage.Error);
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Cliente não cadastrado!",
-                        "SGAutomotiva",
-                        MessageBoxButton.OK,
-                        MessageBoxImage.Error);
-                }
-            }
-            else
-            {
-                MessageBox.Show("Preencha os campos Obrigatorios!",
-                        "SGAutomotiva", MessageBoxButton.OK,
-                        MessageBoxImage.Error);
+                    MessageBox.Show("Preencha os campos Obrigatorios!",
+                            "SGAutomotiva", MessageBoxButton.OK,
+                            MessageBoxImage.Error);
 
+                }
+                this.Close();
             }
+
+        private void btn_voltar_Click(object sender, RoutedEventArgs e)
+        {
             this.Close();
         }
     }

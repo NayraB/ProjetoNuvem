@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Teste.View"
         mc:Ignorable="d"
-        Title="Excluir Cliente" Height="179.104" Width="296.567" Loaded="Window_Loaded">
+        Title="Excluir Cliente" Height="179.104" Width="296.567" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">
     <Grid>
         <ComboBox 
             x:Name="cboListarVeiculo" HorizontalAlignment="Left" 
@@ -13,5 +13,6 @@
         </ComboBox>
         <Label Content="Selecione o veículo que deseja excluir:" HorizontalAlignment="Left" Margin="10,18,0,0" VerticalAlignment="Top"/>
         <Button x:Name="btnExcluirVeiculo" Content="Excluir" Click="btnExcluirVeiculo_Click" Margin="186,106,14,10"/>
+        <Button x:Name="btn_voltar" Content="Voltar" HorizontalAlignment="Left" Margin="10,106,0,0" VerticalAlignment="Top" Width="89" Height="32" Click="btn_voltar_Click"/>
     </Grid>
 </Window>

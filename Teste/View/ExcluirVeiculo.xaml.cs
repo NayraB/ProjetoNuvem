@@ -62,5 +62,10 @@ namespace Teste.View
             cboListarVeiculo.DisplayMemberPath = "ModeloVeiculo";
             cboListarVeiculo.SelectedValuePath = "IdVeiculo";
         }
+
+        private void btn_voltar_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

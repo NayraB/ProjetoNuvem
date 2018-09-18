@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Teste.View"
         mc:Ignorable="d"
-        Title="Cadastrar" Height="300" Width="300">
+        Title="Cadastrar" Height="300" Width="300" WindowStartupLocation="CenterScreen">
     <Grid>
         <Button x:Name="btnCadastrarCliente" Content="Cliente" HorizontalAlignment="Left" Margin="69,37,0,0" VerticalAlignment="Top" Width="152" Height="57" Click="btnCadastrarCliente_Click"/>
         <Button x:Name="btnCadastrarVeiculo" Content="Veículo" HorizontalAlignment="Left" Margin="69,107,0,0" VerticalAlignment="Top" Width="152" Height="57" Click="btnCadastrarVeiculo_Click"/>

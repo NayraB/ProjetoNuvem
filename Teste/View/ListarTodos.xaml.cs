@@ -35,5 +35,10 @@ namespace Teste.View
             //dtgridTodos.ItemsSource = ClienteDAO.RetornarCliente();
             //dtgridTodos.DisplayMemberPath = "IdCliente";
         }
+
+        private void btn_voltar_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -39,11 +39,13 @@ namespace Teste.View
         private void btnVoltar_Click(object sender, RoutedEventArgs e)
         {
             // fechar essa janela
+            this.Close();
         }
 
         private void btnSair_Click(object sender, RoutedEventArgs e)
         {
             // fechar todas as janelas
+            Environment.Exit(0);
         }
     }
 }

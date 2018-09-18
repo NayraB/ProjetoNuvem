@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Teste.View"
         mc:Ignorable="d"
-        Title="Listar" Height="300" Width="300">
+        Title="Listar" Height="300" Width="300" WindowStartupLocation="CenterScreen">
     <Grid>
         <Button x:Name="btnVoltar" Content="Voltar" HorizontalAlignment="Left" Margin="42,206,0,0" VerticalAlignment="Top" Width="75" Click="btnVoltar_Click" />
         <Button x:Name="btnSair" Content="Sair" HorizontalAlignment="Left" Margin="183,206,0,0" VerticalAlignment="Top" Width="75" Click="btnSair_Click"/>

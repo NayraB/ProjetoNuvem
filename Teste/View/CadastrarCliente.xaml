@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Teste.View"
         mc:Ignorable="d"
-        Title="CadastrarCliente" Height="242.654" Width="251.712">
+        Title="CadastrarCliente" Height="242.654" Width="251.712" WindowStartupLocation="CenterScreen">
     <Grid Margin="0,0,10,7">
         <Label Content="Nome" HorizontalAlignment="Left" Margin="24,10,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btnCadastrarCliente" Content="Cadastrar" HorizontalAlignment="Left" Margin="76,174,0,0" VerticalAlignment="Top" Width="75" Click="btnCadastrarCliente_Click"/>
+        <Button x:Name="btnCadastrarCliente" Content="Cadastrar" HorizontalAlignment="Left" Margin="129,175,0,0" VerticalAlignment="Top" Width="75" Click="btnCadastrarCliente_Click" FlowDirection="RightToLeft"/>
         <TextBox x:Name="txtNomeCliente" HorizontalAlignment="Left" Height="23" Margin="108,13,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="txtSobrenomeCliente" HorizontalAlignment="Left" Height="23" Margin="108,52,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Label Content="Sobrenome" HorizontalAlignment="Left" Margin="24,49,0,0" VerticalAlignment="Top"/>
@@ -16,6 +16,7 @@
         <TextBox x:Name="txtTelefoneCliente" HorizontalAlignment="Left" Height="23" Margin="108,91,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Label Content="CPF" HorizontalAlignment="Left" Margin="24,130,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtCpfCliente" HorizontalAlignment="Left" Height="23" Margin="108,133,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btn_voltar" Content="Voltar" HorizontalAlignment="Left" Margin="20,175,0,0" VerticalAlignment="Top" Width="75" Click="btn_voltar_Click"/>
 
     </Grid>
 </Window>

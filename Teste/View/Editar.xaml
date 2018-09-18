@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Teste.View"
         mc:Ignorable="d"
-        Title="Editar" Height="300" Width="300">
+        Title="Editar" Height="300" Width="300" WindowStartupLocation="CenterScreen">
     <Grid>
         <Button x:Name="btnEditarCliente" Content="Cliente" HorizontalAlignment="Left" Margin="69,37,0,0" VerticalAlignment="Top" Width="152" Height="57" Click="btnEditarCliente_Click"/>
         <Button x:Name="btnEditarVeiculo" Content="Veículo" HorizontalAlignment="Left" Margin="69,107,0,0" VerticalAlignment="Top" Width="152" Height="57" Click="btnEditarVeiculo_Click"/>

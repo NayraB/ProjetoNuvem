@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Teste.View"
         mc:Ignorable="d"
-        Title="EditarVeiculo" Height="325.5" Width="429.5" Loaded="Window_Loaded" >
+        Title="EditarVeiculo" Height="325.5" Width="429.5" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen" >
     <Grid Margin="0,0,15,9">
         <Label Content="Marca" HorizontalAlignment="Left" Margin="34,78,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.698,1.173"/>
-        <Button x:Name="btnEditar" Content="Alterar" HorizontalAlignment="Left" Margin="152,266,0,0" VerticalAlignment="Top" Width="76" Click="btnEditar_Click"/>
+        <Button x:Name="btnEditar" Content="Alterar" HorizontalAlignment="Left" Margin="233,266,0,0" VerticalAlignment="Top" Width="76" Click="btnEditar_Click"/>
         <ComboBox x:Name="cboEditarVeiculo" SelectionChanged="ComboBox_SelectionChanged" HorizontalAlignment="Left" Margin="125,33,0,0" VerticalAlignment="Top" Width="184" Height="27"/>
         <TextBox x:Name="txtMarcaVeiculo" HorizontalAlignment="Left" Height="28" Margin="125,76,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="184"/>
         <Label Content="Procurar Veículo" HorizontalAlignment="Left" Margin="25,33,0,0" VerticalAlignment="Top"/>
@@ -22,6 +22,7 @@
         <TextBox x:Name="txtAnoVeiculo" HorizontalAlignment="Left" Height="28" Margin="125,206,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="184"/>
         <Label Content="Entrada" HorizontalAlignment="Left" Margin="34,235,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.698,1.173"/>
         <TextBox x:Name="txtEntradaVeiculo" HorizontalAlignment="Left" Height="28" Margin="125,233,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="184"/>
+        <Button x:Name="btn_voltar" Content="Voltar" HorizontalAlignment="Left" Margin="125,266,0,0" VerticalAlignment="Top" Width="75" Click="btn_voltar_Click"/>
 
     </Grid>
 </Window>

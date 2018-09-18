@@ -32,5 +32,10 @@ namespace Teste.View
             dtgridVeiculo.DisplayMemberPath = "MarcaVeiculo";
             dtgridVeiculo.DisplayMemberPath = "ModeloVeiculo";
         }
+
+        private void btn_voltar_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

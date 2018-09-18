@@ -87,5 +87,10 @@ namespace Teste.View
             // Propriedade que vai ser utilizada quando meu Selected Value for acionado!!!!!!!!*********
             cboEditarVeiculo.SelectedValuePath = "IdVeiculo";
         }
+
+        private void btn_voltar_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
     }

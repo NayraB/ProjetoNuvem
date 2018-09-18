@@ -38,12 +38,12 @@ namespace Teste.View
 
         private void btnVoltar_Click(object sender, RoutedEventArgs e)
         {
-
+            this.Close();
         }
 
         private void btnSair_Click(object sender, RoutedEventArgs e)
         {
-
+            Environment.Exit(0); 
         }
     }
 }
