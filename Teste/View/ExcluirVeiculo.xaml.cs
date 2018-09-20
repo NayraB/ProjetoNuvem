@@ -72,14 +72,17 @@ namespace Teste.View
 
         private void cboListarVeiculo_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            
             int idVeiculo = (int)cboListarVeiculo.SelectedValue;
             Veiculo veiculo = VeiculoDAO.BuscarVeiculoPorId(idVeiculo);
+            Cliente cliente = ClienteDAO.BuscarClientePorId(idVeiculo);
 
-            lblNomeCiente.Content = veiculo.ModeloVeiculo;
-            txtNomeCarro.Text = veiculo.ModeloVeiculo;
-            txtSobrenomeCliente.Text = cliente.SobrenomeCliente;
-            txtCpfCliente.Text = cliente.CpfCliente;
-            txtTelefoneCliente.Text = cliente.TelefoneCliente;
+            lblModeloVeiculo.Content = veiculo.ModeloVeiculo;
+            lblPlaca.Content = veiculo.PlacaVeiculo;
+            lblDono.Content = cliente.NomeCliente;
+            //    txtSobrenomeCliente.Text = cliente.SobrenomeCliente;
+            //    txtCpfCliente.Text = cliente.CpfCliente;
+            //    txtTelefoneCliente.Text = cliente.TelefoneCliente;
         }
     }
 }

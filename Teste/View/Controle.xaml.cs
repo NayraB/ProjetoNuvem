@@ -37,5 +37,10 @@ namespace Teste.View
             dtgridVeiculo.DisplayMemberPath = "MarcaVeiculo";
             dtgridVeiculo.DisplayMemberPath = "ModeloVeiculo";
         }
+
+        private void DataGridTemplateColumn_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

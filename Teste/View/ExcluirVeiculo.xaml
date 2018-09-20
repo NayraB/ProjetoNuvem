@@ -14,12 +14,11 @@
         <Label Content="Selecione o veículo que deseja excluir:" HorizontalAlignment="Left" Margin="10,18,0,0" VerticalAlignment="Top"/>
         <Button x:Name="btnExcluirVeiculo" Content="Excluir" Click="btnExcluirVeiculo_Click" Margin="186,106,14,187"/>
         <Button x:Name="btn_voltar" Content="Voltar" HorizontalAlignment="Left" Margin="10,106,0,0" VerticalAlignment="Top" Width="89" Height="32" Click="btn_voltar_Click"/>
-        <Label x:Name="lblNomeCiente" Content="Nome" HorizontalAlignment="Left" Margin="56,179,0,0" VerticalAlignment="Top" Width="70"/>
-        <Label x:Name="lblNome" Content="Nome" HorizontalAlignment="Left" Margin="10,179,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label" Content="Label" HorizontalAlignment="Left" Margin="15,210,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label1" Content="Label" HorizontalAlignment="Left" Margin="61,210,0,0" VerticalAlignment="Top" Width="65"/>
-        <Label x:Name="label2" Content="Label" HorizontalAlignment="Left" Margin="15,241,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label3" Content="Label" HorizontalAlignment="Left" Margin="61,241,0,0" VerticalAlignment="Top" Width="65"/>
-        <TextBox x:Name="txtNomeCarro" HorizontalAlignment="Left" Height="23" Margin="158,197,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblModeloVeiculo" Content="" HorizontalAlignment="Left" Margin="56,179,0,0" VerticalAlignment="Top" Width="70"/>
+        <Label x:Name="modelo" Content="Modelo" HorizontalAlignment="Left" Margin="10,179,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Placa" Content="Placa" HorizontalAlignment="Left" Margin="15,210,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblPlaca" Content="" HorizontalAlignment="Left" Margin="61,210,0,0" VerticalAlignment="Top" Width="65"/>
+        <Label x:Name="dono" Content="Dono" HorizontalAlignment="Left" Margin="15,241,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblDono" Content="" HorizontalAlignment="Left" Margin="61,241,0,0" VerticalAlignment="Top" Width="65"/>
     </Grid>
 </Window>

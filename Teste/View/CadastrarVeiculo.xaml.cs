@@ -32,7 +32,7 @@ namespace Teste.View
                 && !string.IsNullOrEmpty(txtMarcaVeiculo.Text)
                 && !string.IsNullOrEmpty(txtAnoVeiculo.Text)
                 && !string.IsNullOrEmpty(txtCorVeiculo.Text)
-                && !string.IsNullOrEmpty(txtEntradaVeiculo.Text)
+                //&& !string.IsNullOrEmpty(txtEntradaVeiculo.Text)
                 && !string.IsNullOrEmpty(txtPlacaVeiculo.Text))
             {
 
@@ -44,7 +44,7 @@ namespace Teste.View
                     MarcaVeiculo = txtMarcaVeiculo.Text,
                     AnoVeiculo = txtAnoVeiculo.Text,
                     CorVeiculo = txtCorVeiculo.Text,
-                    HoraEntrada = txtEntradaVeiculo.Text,
+                    HoraEntrada = txtEntradaVeiculo.Text = DateTime.Now.ToShortDateString() /*DateTime.Now.ToString("dd/MM/yyyy")*/,
                     PlacaVeiculo = txtPlacaVeiculo.Text
                     
 

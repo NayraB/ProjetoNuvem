@@ -15,7 +15,7 @@
                 <DataGridTextColumn Header="Ano" Binding="{Binding AnoVeiculo}" />
                 <DataGridTextColumn Header="Cor" Binding="{Binding CorVeiculo}" />
                 <DataGridTextColumn Header="Hora de Entrada" Binding="{Binding HoraEntrada}" />
-                <DataGridTemplateColumn Header="Hora de Saída" >
+                <DataGridTemplateColumn Header="Hora de Saída">
                 <DataGridTemplateColumn.CellTemplate>
                     <DataTemplate>
                         <Button Content="Marcar Saída" Command="Delete"/>
