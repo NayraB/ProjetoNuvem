@@ -158,6 +158,9 @@
     <Compile Include="View\ListarVeiculo.xaml.cs">
       <DependentUpon>ListarVeiculo.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\MarcarSaida.xaml.cs">
+      <DependentUpon>MarcarSaida.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\Principal.xaml.cs">
       <DependentUpon>Principal.xaml</DependentUpon>
     </Compile>
@@ -276,6 +279,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\ListarVeiculo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\MarcarSaida.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

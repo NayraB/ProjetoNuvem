@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Teste.DAL;
+using Teste.Model;
 
 namespace Teste.View
 {
@@ -38,9 +39,19 @@ namespace Teste.View
             dtgridVeiculo.DisplayMemberPath = "ModeloVeiculo";
         }
 
-        private void DataGridTemplateColumn_Checked(object sender, RoutedEventArgs e)
-        {
+        
+        private void Button_Click(object sender, RoutedEventArgs e) 
+            {
+            int idCliente = (int)cboEditarCliente.SelectedValue;
 
+            Cliente clienteEditado = ClienteDAO.BuscarClientePorId(idCliente);
+
+            clienteEditado.HoraSaida = txtHoraSaida.Text;
+
+            HoraSaida = txtHoraSaida.Text = DateTime.Now.ToLongTimeString()
+            //MarcarSaida tela = new MarcarSaida();
+            //tela.ShowDialog();
+            }
+            
         }
-    }
 }

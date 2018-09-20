@@ -26,6 +26,8 @@ namespace Teste.DAL
             }
         }
 
+        
+
         public static List<Veiculo> RetornarVeiculo()
         {
             return ctx.Veiculo.ToList();
