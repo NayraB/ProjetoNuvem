@@ -42,5 +42,11 @@ namespace Teste.View
         {
 
         }
-    }
+
+        private void Button_Click(object sender, RoutedEventArgs e) 
+            {
+            MarcarSaida tela = new MarcarSaida();
+            tela.ShowDialog();
+            }
+        }
 }
