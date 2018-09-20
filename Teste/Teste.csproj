@@ -160,6 +160,9 @@
     <Compile Include="View\Principal.xaml.cs">
       <DependentUpon>Principal.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\Servicos.xaml.cs">
+      <DependentUpon>Servicos.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -280,6 +283,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\Principal.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Servicos.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

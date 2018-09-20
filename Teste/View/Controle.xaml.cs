@@ -14,44 +14,52 @@ using System.Windows.Shapes;
 using Teste.DAL;
 using Teste.Model;
 
-namespace Teste.View
-{
+namespace Teste.View {
     /// <summary>
     /// Interaction logic for Controle.xaml
     /// </summary>
-    public partial class Controle : Window
-    {
-        public Controle()
-        {
+    public partial class Controle : Window {
+        public Controle() {
             InitializeComponent();
-        }
+            }
 
-        private void btn_voltar_Click(object sender, RoutedEventArgs e)
-        {
+        private void btn_voltar_Click(object sender, RoutedEventArgs e) {
             this.Close();
-        }
+            }
 
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
+        private void Window_Loaded(object sender, RoutedEventArgs e) {
             // criar um retornar veículo no DAO
             dtgridVeiculo.ItemsSource = VeiculoDAO.RetornarVeiculo();
             dtgridVeiculo.DisplayMemberPath = "MarcaVeiculo";
             dtgridVeiculo.DisplayMemberPath = "ModeloVeiculo";
-        }
-
-        
-        private void Button_Click(object sender, RoutedEventArgs e) 
-            {
-            int idCliente = (int)cboEditarCliente.SelectedValue;
-
-            Cliente clienteEditado = ClienteDAO.BuscarClientePorId(idCliente);
-
-            clienteEditado.HoraSaida = txtHoraSaida.Text;
-
-            HoraSaida = txtHoraSaida.Text = DateTime.Now.ToLongTimeString()
-            //MarcarSaida tela = new MarcarSaida();
-            //tela.ShowDialog();
             }
-            
+
+
+        private void btnRegistrarSaida_Click(object sender, RoutedEventArgs e) {
+
+            Veiculo vSelecionado = (Veiculo) dtgridVeiculo.SelectedItem;
+
+            MarcarSaida tela = new MarcarSaida();
+            tela.ShowDialog();
+
+            }
+
+        private void dtgridVeiculo_LoadingRow(object sender, DataGridRowEventArgs e) {
+            Veiculo v = (Veiculo)e.Row.DataContext;
+
+            if(string.IsNullOrEmpty(v.HoraSaida)) {
+                // mostrar botao
+                Button btn = new Button();
+                btn.Content = "Marcar Saída";
+                btn.Click += btnRegistrarSaida_Click;
+
+                // inserindo 
+                //dtgridVeiculo.Columns[6].Cell.Controls = btn;
+                }
+            else {
+                //mostrar textblock com a hora saida
+                }
+
+            }
         }
-}
+    }

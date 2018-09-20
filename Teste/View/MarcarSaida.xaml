@@ -5,10 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Teste.View"
         mc:Ignorable="d"
-        Title="MarcarSaida" Height="127.66" Width="279.787">
+        Title="Marcar Saida" Height="187.234" Width="284.042" Loaded="Window_Loaded">
     <Grid Margin="0,0,11,5">
-        <Label x:Name="lblHoraAtual" Content="Horário atual:" HorizontalAlignment="Left" Margin="22,23,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtHoraSaida" HorizontalAlignment="Left" Height="23" Margin="108,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btnConfirmar" Click="btnConfirmar_Click" Content="Confirmar" HorizontalAlignment="Left" Margin="94,62,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label x:Name="lblVeiculo" Content="Selecione o veículo:" HorizontalAlignment="Left" Margin="22,23,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnConfirmar" Click="btnConfirmar_Click" Content="Confirmar" HorizontalAlignment="Left" Margin="96,109,0,0" VerticalAlignment="Top" Width="93"/>
+        <ComboBox x:Name="cboEditarVeiculo" SelectionChanged="cboEditarVeiculo_SelectionChanged" HorizontalAlignment="Left" Margin="136,27,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblSaida" Content="Hora de Saída" HorizontalAlignment="Left" Margin="96,54,0,0" VerticalAlignment="Top" Width="93"/>
+        <Label x:Name="lblTotal" Content="Total" HorizontalAlignment="Left" Margin="121,80,0,0" VerticalAlignment="Top"/>
+        <Label Content="R$" HorizontalAlignment="Left" Margin="74,80,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>

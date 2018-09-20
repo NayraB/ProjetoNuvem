@@ -7,7 +7,8 @@
         mc:Ignorable="d"
         Title="ListarVeiculo" Height="327.195" Width="592.808" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">
     <Grid Margin="0,0,2,17">
-        <DataGrid CanUserAddRows="False" IsReadOnly="True" HorizontalAlignment="Left" x:Name="dtgridVeiculo" Height="226" Margin="10,10,0,0" VerticalAlignment="Top" Width="565" AutoGenerateColumns="False">
+        <DataGrid CanUserAddRows="False" IsReadOnly="True" HorizontalAlignment="Left" x:Name="dtgridVeiculo" Height="226" Margin="10,10,0,0" VerticalAlignment="Top" Width="565" AutoGenerateColumns="False"
+                  EnableRowVirtualization="False" LoadingRow="dtgridVeiculo_LoadingRow">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="ID do Veículo" Binding="{Binding IdVeiculo}" />
                 <DataGridTextColumn Header="Modelo" Binding="{Binding ModeloVeiculo}" />
@@ -18,7 +19,7 @@
                 <DataGridTemplateColumn Header="Hora de Saída">
                 <DataGridTemplateColumn.CellTemplate>
                     <DataTemplate>
-                        <Button Content="Marcar Saída" Click="Button_Click"/>
+                        <Button Content="Marcar Saída" Click="btnRegistrarSaida_Click"/>
                     </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>

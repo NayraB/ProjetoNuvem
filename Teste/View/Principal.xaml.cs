@@ -62,7 +62,8 @@ namespace Teste.View
 
         private void btnServicos_Click(object sender, RoutedEventArgs e)
         {
-
+            Servicos tela = new Servicos();
+            tela.ShowDialog();
         }
     }
 }
