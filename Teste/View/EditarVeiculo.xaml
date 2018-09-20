@@ -9,7 +9,8 @@
     <Grid Margin="0,0,15,9">
         <Label Content="Marca" HorizontalAlignment="Left" Margin="34,78,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.698,1.173"/>
         <Button x:Name="btnEditar" Content="Alterar" HorizontalAlignment="Left" Margin="233,266,0,0" VerticalAlignment="Top" Width="76" Click="btnEditar_Click"/>
-        <ComboBox x:Name="cboEditarVeiculo" SelectionChanged="ComboBox_SelectionChanged" HorizontalAlignment="Left" Margin="125,33,0,0" VerticalAlignment="Top" Width="184" Height="27"/>
+        <ComboBox x:Name="cboEditarVeiculo" SelectionChanged="ComboBox_SelectionChanged" HorizontalAlignment="Left" Margin="125,33,0,0" VerticalAlignment="Top" Width="184" Height="27"
+         />
         <TextBox x:Name="txtMarcaVeiculo" HorizontalAlignment="Left" Height="28" Margin="125,76,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="184"/>
         <Label Content="Procurar Veículo" HorizontalAlignment="Left" Margin="25,33,0,0" VerticalAlignment="Top"/>
         <Label Content="Modelo" HorizontalAlignment="Left" Margin="34,109,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.698,1.173"/>

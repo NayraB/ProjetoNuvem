@@ -21,7 +21,8 @@ namespace Teste.View {
             InitializeComponent();
             }
 
-        private void btnConfirmar_Click(object sender, RoutedEventArgs e) {
+        private void btnConfirmar_Click(object sender, RoutedEventArgs e) 
+            {
 
             }
         }
