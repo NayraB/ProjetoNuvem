@@ -37,6 +37,8 @@ namespace Teste.View
             // verifica se o metodo do ClienteDAO é verdadeiro
             if (ClienteDAO.ExcluirCliente(idCliente)){
 
+
+                VeiculoDAO.ExcluirVeiculosPorClienteID(idCliente);
                 MessageBox.Show("Cliente excluído com sucesso!",
                              "Loja",
                              MessageBoxButton.OK,

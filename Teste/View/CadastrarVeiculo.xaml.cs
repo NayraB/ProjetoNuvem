@@ -36,15 +36,14 @@ namespace Teste.View
                 && !string.IsNullOrEmpty(txtPlacaVeiculo.Text))
             {
 
-                Veiculo veiculo = new Veiculo
-                {
-                    IdCliente =  int.Parse(cboCliente.SelectedValue.ToString()),
+                Veiculo veiculo = new Veiculo {
+                    IdCliente = int.Parse(cboCliente.SelectedValue.ToString()),
                     //IdCliente = int.Parse(txtNomeCliente.Text),
                     ModeloVeiculo = txtModeloVeiculo.Text,
                     MarcaVeiculo = txtMarcaVeiculo.Text,
                     AnoVeiculo = txtAnoVeiculo.Text,
                     CorVeiculo = txtCorVeiculo.Text,
-                    HoraEntrada = txtEntradaVeiculo.Text = DateTime.Now.ToShortDateString() /*DateTime.Now.ToString("dd/MM/yyyy")*/,
+                    HoraEntrada = txtEntradaVeiculo.Text = DateTime.Now.ToLongTimeString() /*DateTime.Now.ToString("dd/MM/yyyy")*/,
                     PlacaVeiculo = txtPlacaVeiculo.Text
                     
 

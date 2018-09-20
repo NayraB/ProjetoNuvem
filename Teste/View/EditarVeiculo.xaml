@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Teste.View"
         mc:Ignorable="d"
-        Title="EditarVeiculo" Height="325.5" Width="429.5" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen" >
+        Title="EditarVeiculo" Height="338.167" Width="429.5" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen" >
     <Grid Margin="0,0,15,9">
         <Label Content="Marca" HorizontalAlignment="Left" Margin="34,78,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.698,1.173"/>
         <Button x:Name="btnEditar" Content="Alterar" HorizontalAlignment="Left" Margin="233,266,0,0" VerticalAlignment="Top" Width="76" Click="btnEditar_Click"/>
