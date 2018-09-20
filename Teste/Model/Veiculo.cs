@@ -6,15 +6,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Teste.Model
-{
+namespace Teste.Model {
     [Table("Veiculo")]
-    class Veiculo
-    {
+    class Veiculo {
         // colocar a chave secundária (vincular o cliente com o veiculo)
         [Key]
         public int IdVeiculo { get; set; }
-        public int IdCliente { get; set; }
         public string ModeloVeiculo { get; set; }
         public string MarcaVeiculo { get; set; }
         public string PlacaVeiculo { get; set; }
@@ -23,6 +20,16 @@ namespace Teste.Model
         public string HoraEntrada { get; set; }
         public string HoraSaida { get; set; }
         public string Total { get; set; }
+
+
+        public int IdCliente { get; set; }
+        public virtual Cliente _Cliente { get; set; }
+
+        public virtual string DescricaoCombo {
+            get {
+                return PlacaVeiculo + " - " + _Cliente.NomeCliente;
+            }
+        }
 
 
 
