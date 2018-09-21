@@ -37,23 +37,30 @@ namespace Teste.View {
 
         private void btnRegistrarSaida_Click(object sender, RoutedEventArgs e) {
 
-            Veiculo vSelecionado = (Veiculo) dtgridVeiculo.SelectedItem;
-
-            MarcarSaida tela = new MarcarSaida();
-            tela.ShowDialog();
+            Veiculo vSelecionado = (Veiculo)dtgridVeiculo.SelectedItem;
+            v.HoraSaida = DateTime.Now.ToLongTimeString();
+            dtgridVeiculo.ItemsSource = new List<Veiculo>() { v };
+            btn = null;
+                
+            //MarcarSaida tela = new MarcarSaida();
+            //tela.ShowDialog();
 
             }
 
+        private Veiculo v;
+        private Button btn;
+
         private void dtgridVeiculo_LoadingRow(object sender, DataGridRowEventArgs e) {
-            Veiculo v = (Veiculo)e.Row.DataContext;
+            v = (Veiculo)e.Row.DataContext;
 
             if(string.IsNullOrEmpty(v.HoraSaida)) {
                 // mostrar botao
-                Button btn = new Button();
+                btn = new Button();
                 btn.Content = "Marcar Saída";
                 btn.Click += btnRegistrarSaida_Click;
 
                 // inserindo 
+
                 //dtgridVeiculo.Columns[6].Cell.Controls = btn;
                 }
             else {

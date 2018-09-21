@@ -86,5 +86,19 @@ namespace Teste.DAL
                 return false;
             }
         }
+
+        public static double CalcularValorTotal(DateTime HoraInicial, DateTime HoraFinal)
+        {
+
+            if(HoraInicial < HoraFinal)
+            {
+                //calculo
+                double TotalHoras = (HoraFinal - HoraInicial).TotalHours;
+                return TotalHoras;
+            }
+
+            return 0.0;
+
+        }
     }
 }
