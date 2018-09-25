@@ -31,7 +31,7 @@
             <TextBox x:Name="txtHoraSaida" HorizontalAlignment="Left" Height="24" Margin="336,98,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.558,2.583"/>
             <Label Content="Total R$" HorizontalAlignment="Left" Margin="278,190,0,0" VerticalAlignment="Top"/>
             <TextBox x:Name="txtTotal" HorizontalAlignment="Left" Height="24" Margin="336,190,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.558,2.583"/>
-            <Label Content="" x:Name="lbHoraEntrada" HorizontalAlignment="Left" Margin="344,69,0,0" VerticalAlignment="Top"/>
+            <Label Content="00:00" x:Name="lbHoraEntrada"  HorizontalAlignment="Left" Margin="336,67,0,0" VerticalAlignment="Top"/>
 
         </Grid>
 

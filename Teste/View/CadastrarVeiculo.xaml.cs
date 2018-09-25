@@ -43,7 +43,8 @@ namespace Teste.View
                     MarcaVeiculo = txtMarcaVeiculo.Text,
                     AnoVeiculo = txtAnoVeiculo.Text,
                     CorVeiculo = txtCorVeiculo.Text,
-                    HoraEntrada = txtEntradaVeiculo.Text = DateTime.Now.ToLongTimeString() /*DateTime.Now.ToString("dd/MM/yyyy")*/,
+                    HoraEntrada = DateTime.Parse(txtEntradaVeiculo.Text),
+                    /*DateTime.Now.ToString("dd/MM/yyyy")*/
                     PlacaVeiculo = txtPlacaVeiculo.Text
                     
 
@@ -86,7 +87,9 @@ namespace Teste.View
             txtSobrenomeCliente.Text = cliente.SobrenomeCliente;
             txtCpfCliente.Text = cliente.CpfCliente;
             txtTelefoneCliente.Text = cliente.TelefoneCliente;
-            
+            txtEntradaVeiculo.Text = DateTime.Now.ToLongTimeString();
+
+
 
         }
 
