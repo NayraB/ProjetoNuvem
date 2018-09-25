@@ -8,8 +8,8 @@ namespace Teste.Migrations
         public override void Up()
         {
             AlterColumn("dbo.Veiculo", "HoraEntrada", c => c.DateTime(nullable: false));
-            AlterColumn("dbo.Veiculo", "HoraSaida", c => c.DateTime(nullable: false));
-            AlterColumn("dbo.Veiculo", "Total", c => c.Double(nullable: false));
+            AlterColumn("dbo.Veiculo", "HoraSaida", c => c.DateTime());
+            AlterColumn("dbo.Veiculo", "Total", c => c.Double());
         }
         
         public override void Down()

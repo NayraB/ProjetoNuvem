@@ -18,8 +18,8 @@ namespace Teste.Model {
         public string AnoVeiculo { get; set; }
         public string CorVeiculo { get; set; }
         public DateTime HoraEntrada { get; set; }
-        public DateTime HoraSaida { get; set; }
-        public Double Total { get; set; }
+        public DateTime? HoraSaida { get; set; }
+        public Double? Total { get; set; }
 
 
         public int IdCliente { get; set; }

@@ -13,7 +13,7 @@ namespace Teste.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201809251402593_mudandoTipoDasVariaveis_1"; }
+            get { return "201809251423491_mudandoTipoDasVariaveis_1"; }
         }
         
         string IMigrationMetadata.Source

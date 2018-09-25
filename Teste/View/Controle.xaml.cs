@@ -33,7 +33,7 @@ namespace Teste.View {
             Veiculo veiculo = VeiculoDAO.BuscarVeiculoPorId(idVeiculo);
 
             DateTime dhSaida = DateTime.Now;
-            txtHoraSaida.Text = dhSaida.ToString();
+            txtHoraSaida.Text = dhSaida.ToString("hh:mm");
             DateTime dhEntrada = veiculo.HoraEntrada;
 
 
@@ -55,27 +55,13 @@ namespace Teste.View {
             var TotalHoras = (dhSaida - dhEntrada).TotalHours;
             var ValorTotal = (TotalHoras * 10.0);
 
-            txtTotal.Text = ValorTotal.ToString();
+            lblValorTotal.Content = ValorTotal.ToString();
           //  double valorTotal = ts.TotalHours * 10;
 
             //txtTotal.Text = valorTotal.ToString();
 
 
-
-            int idVeiculo = (int)cboVeiculo.SelectedValue;
-
-            Veiculo veiculoEditado = VeiculoDAO.BuscarVeiculoPorId(idVeiculo);
-
-            veiculoEditado.HoraSaida = DateTime.Now.ToLongTimeString();
-
-            
-
-               
-            
-
-
-
-            }
+        }
 
         private void Window_Loaded_1(object sender, RoutedEventArgs e) {
             cboVeiculo.ItemsSource = VeiculoDAO.RetornarVeiculo();
@@ -91,11 +77,9 @@ namespace Teste.View {
             txtPlacaVeiculo.Text = veiculo.PlacaVeiculo;
             txtCorVeiculo.Text = veiculo.CorVeiculo;
             txtAnoVeiculo.Text = veiculo.AnoVeiculo.ToString();
-            lbHoraEntrada.Content = veiculo.HoraEntrada;
-            lbHoraSaida.Content = veiculo.HoraSaida;
+            lblHoraEntrada.Content = veiculo.HoraEntrada;
 
-
-            }
+        }
     }
     }
     

@@ -87,7 +87,7 @@ namespace Teste.View
             txtSobrenomeCliente.Text = cliente.SobrenomeCliente;
             txtCpfCliente.Text = cliente.CpfCliente;
             txtTelefoneCliente.Text = cliente.TelefoneCliente;
-            txtEntradaVeiculo.Text = DateTime.Now.ToLongTimeString();
+            txtEntradaVeiculo.Text = DateTime.Now.ToString("hh:mm");
 
 
 

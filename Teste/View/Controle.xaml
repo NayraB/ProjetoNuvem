@@ -28,15 +28,11 @@
         <Grid>
             <Label Content="Hora Entrada" HorizontalAlignment="Left" Margin="251,67,0,0" VerticalAlignment="Top"/>
             <Label Content="Hora Saída" HorizontalAlignment="Left" Margin="251,96,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="txtHoraSaida" HorizontalAlignment="Left" Height="24" Margin="336,98,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.558,2.583"/>
             <Label Content="Total R$" HorizontalAlignment="Left" Margin="278,190,0,0" VerticalAlignment="Top"/>
-            <TextBox x:Name="txtTotal" HorizontalAlignment="Left" Height="24" Margin="336,190,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.558,2.583"/>
-<<<<<<< HEAD
-            <Label Content="00:00" x:Name="lbHoraEntrada"  HorizontalAlignment="Left" Margin="336,67,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="lblValorTotal"  Content="00"   HorizontalAlignment="Left" Margin="336,190,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="lblHoraEntrada" Content="00" HorizontalAlignment="Left" Margin="336,67,0,0" VerticalAlignment="Top"/>
 
-=======
-            <Label Content="00:00" x:Name="lbHoraEntrada" HorizontalAlignment="Left" Margin="344,69,0,0" VerticalAlignment="Top"/>
-            <Label Content="00:00" x:Name="lbHoraSaida" HorizontalAlignment="Left" Margin="344,95,0,0" VerticalAlignment="Top"/>
->>>>>>> 4b83fcc4b665b668d79251cc16a4b2f3763f1c99
         </Grid>
 
     </Grid>
