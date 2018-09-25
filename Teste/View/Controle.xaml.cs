@@ -34,7 +34,21 @@ namespace Teste.View {
 
         private void btnMarcarSaida_Click_1(object sender, RoutedEventArgs e) {
 
-        }
+
+            int idVeiculo = (int)cboVeiculo.SelectedValue;
+
+            Veiculo veiculoEditado = VeiculoDAO.BuscarVeiculoPorId(idVeiculo);
+
+            veiculoEditado.HoraSaida = DateTime.Now.ToLongTimeString();
+
+            
+
+               
+            
+
+
+
+            }
 
         private void Window_Loaded_1(object sender, RoutedEventArgs e) {
             cboVeiculo.ItemsSource = VeiculoDAO.RetornarVeiculo();
@@ -53,8 +67,10 @@ namespace Teste.View {
             txtCorVeiculo.Text = veiculo.CorVeiculo;
             txtAnoVeiculo.Text = veiculo.AnoVeiculo;
             lbHoraEntrada.Content = veiculo.HoraEntrada;
+            lbHoraSaida.Content = veiculo.HoraSaida;
 
-        }
+
+            }
     }
     }
     
