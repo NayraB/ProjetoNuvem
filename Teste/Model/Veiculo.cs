@@ -31,6 +31,12 @@ namespace Teste.Model {
             }
         }
 
+        public virtual string DescricaoComboModelo {
+            get {
+                return ModeloVeiculo + " - " + _Cliente.NomeCliente;
+            }
+        }
+
 
 
 

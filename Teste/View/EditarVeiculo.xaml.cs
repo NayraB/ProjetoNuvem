@@ -83,8 +83,6 @@ namespace Teste.View
 
             cboEditarVeiculo.ItemsSource = VeiculoDAO.RetornarVeiculo();
             cboEditarVeiculo.DisplayMemberPath = "DescricaoCombo";
-            // Caminho que vai ser acionado para o Selected Value
-            // Propriedade que vai ser utilizada quando meu Selected Value for acionado!!!!!!!!*********
             cboEditarVeiculo.SelectedValuePath = "IdVeiculo";
         }
 

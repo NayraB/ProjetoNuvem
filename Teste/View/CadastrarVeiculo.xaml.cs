@@ -86,6 +86,7 @@ namespace Teste.View
             txtSobrenomeCliente.Text = cliente.SobrenomeCliente;
             txtCpfCliente.Text = cliente.CpfCliente;
             txtTelefoneCliente.Text = cliente.TelefoneCliente;
+            
 
         }
 

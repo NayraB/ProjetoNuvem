@@ -113,6 +113,10 @@
     <Compile Include="Migrations\201809201252450_nomeClienteMaisNomeCarro.Designer.cs">
       <DependentUpon>201809201252450_nomeClienteMaisNomeCarro.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201809251226565_AdcDescricaoComboVeiculo.cs" />
+    <Compile Include="Migrations\201809251226565_AdcDescricaoComboVeiculo.Designer.cs">
+      <DependentUpon>201809251226565_AdcDescricaoComboVeiculo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Cliente.cs" />
     <Compile Include="Model\Veiculo.cs" />
@@ -214,6 +218,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201809201252450_nomeClienteMaisNomeCarro.resx">
       <DependentUpon>201809201252450_nomeClienteMaisNomeCarro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809251226565_AdcDescricaoComboVeiculo.resx">
+      <DependentUpon>201809251226565_AdcDescricaoComboVeiculo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

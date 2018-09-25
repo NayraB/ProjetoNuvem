@@ -5,28 +5,35 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Teste.View"
         mc:Ignorable="d"
-        Title="ListarVeiculo" Height="327.195" Width="592.808" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">
-    <Grid Margin="0,0,2,17">
-        <DataGrid CanUserAddRows="False" IsReadOnly="True" HorizontalAlignment="Left" x:Name="dtgridVeiculo" Height="226" Margin="10,10,0,0" VerticalAlignment="Top" Width="565" AutoGenerateColumns="False"
-                  EnableRowVirtualization="False" LoadingRow="dtgridVeiculo_LoadingRow">
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="ID do Veículo" Binding="{Binding IdVeiculo}" />
-                <DataGridTextColumn Header="Modelo" Binding="{Binding ModeloVeiculo}" />
-                <DataGridTextColumn Header="Placa" Binding="{Binding PlacaVeiculo}" />
-                <DataGridTextColumn Header="Ano" Binding="{Binding AnoVeiculo}" />
-                <DataGridTextColumn Header="Cor" Binding="{Binding CorVeiculo}" />
-                <DataGridTextColumn Header="Hora de Entrada" Binding="{Binding HoraEntrada}" />
-                <DataGridTemplateColumn Header="Hora de Saída">
-                <DataGridTemplateColumn.CellTemplate>
-                    <DataTemplate>
-                        <Button Content="Marcar Saída" Click="btnRegistrarSaida_Click"/>
-                    </DataTemplate>
-                    </DataGridTemplateColumn.CellTemplate>
-                </DataGridTemplateColumn>
-                <DataGridTextColumn Header="Total" Binding="{Binding Total}" />
-            </DataGrid.Columns>
-        </DataGrid>
-        <Button x:Name="btn_voltar" Content="Voltar" HorizontalAlignment="Left" Margin="212,248,0,0" VerticalAlignment="Top" Width="179" Height="31" Click="btn_voltar_Click"/>
+        Title="Controle" Height="319.622" Width="484.255" Loaded="Window_Loaded_1" WindowStartupLocation="CenterScreen">
+    <Grid Margin="0,0,10,7">
+        <Label x:Name="lblProcurarVeiculo" Content="Procurar veículo" HorizontalAlignment="Left" Margin="10,15,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cboVeiculo" SelectionChanged="cboVeiculo_SelectionChanged_1" HorizontalAlignment="Left" Margin="110,19,0,0" VerticalAlignment="Top" Width="120" DisplayMemberPath="NomeCliente" SelectedValuePath="IdCliente" />
+        <Label Content="Dados do Veículo" HorizontalAlignment="Left" Margin="26,56,0,0" VerticalAlignment="Top"/>
+
+        <Label Content="Marca" HorizontalAlignment="Left" Margin="20,92,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnMarcarSaida" Click="btnMarcarSaida_Click_1" Content="Marcar Saida" HorizontalAlignment="Left" Margin="381,232,0,0" VerticalAlignment="Top" Width="75" Height="40" />
+        <TextBox x:Name="txtMarcaVeiculo" HorizontalAlignment="Left" Height="24" Margin="104,94,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtModeloVeiculo" HorizontalAlignment="Left" Height="22" Margin="104,123,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Modelo" HorizontalAlignment="Left" Margin="19,123,0,0" VerticalAlignment="Top"/>
+        <Label Content="Placa" HorizontalAlignment="Left" Margin="21,150,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtPlacaVeiculo" HorizontalAlignment="Left" Height="24" Margin="104,150,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Ano" HorizontalAlignment="Left" Margin="21,176,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtAnoVeiculo" HorizontalAlignment="Left" Height="24" Margin="104,179,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Cor" HorizontalAlignment="Left" Margin="20,202,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtCorVeiculo" HorizontalAlignment="Left" Height="24" Margin="104,208,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.558,2.583"/>
+        <TextBox x:Name="txtEntradaVeiculo" HorizontalAlignment="Left" Height="24" Margin="336,180,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
+
+        <Button x:Name="btn_voltar" Content="Voltar" HorizontalAlignment="Left" Margin="277,232,0,0" VerticalAlignment="Top" Width="75" Click="btn_voltar_Click" Height="40" RenderTransformOrigin="0.613,-0.299"/>
+        <Grid>
+            <Label Content="Hora Entrada" HorizontalAlignment="Left" Margin="251,67,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="txtHoraEntrada" HorizontalAlignment="Left" Height="24" Margin="336,69,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.558,2.583"/>
+            <Label Content="Hora Saída" HorizontalAlignment="Left" Margin="251,96,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="txtHoraSaida" HorizontalAlignment="Left" Height="24" Margin="336,98,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.558,2.583"/>
+            <Label Content="Total R$" HorizontalAlignment="Left" Margin="278,190,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="txtTotal" HorizontalAlignment="Left" Height="24" Margin="336,190,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.558,2.583"/>
+
+        </Grid>
 
     </Grid>
 </Window>

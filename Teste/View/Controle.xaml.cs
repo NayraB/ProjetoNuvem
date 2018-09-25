@@ -27,46 +27,33 @@ namespace Teste.View {
             this.Close();
             }
 
-        private void Window_Loaded(object sender, RoutedEventArgs e) {
-            // criar um retornar veículo no DAO
-            dtgridVeiculo.ItemsSource = VeiculoDAO.RetornarVeiculo();
-            dtgridVeiculo.DisplayMemberPath = "MarcaVeiculo";
-            dtgridVeiculo.DisplayMemberPath = "ModeloVeiculo";
-            }
+        
+        
 
+        
 
-        private void btnRegistrarSaida_Click(object sender, RoutedEventArgs e) {
+        private void btnMarcarSaida_Click_1(object sender, RoutedEventArgs e) {
 
-            Veiculo vSelecionado = (Veiculo)dtgridVeiculo.SelectedItem;
-            v.HoraSaida = DateTime.Now.ToLongTimeString();
-            dtgridVeiculo.ItemsSource = new List<Veiculo>() { v };
-            btn = null;
-                
-            //MarcarSaida tela = new MarcarSaida();
-            //tela.ShowDialog();
+        }
 
-            }
+        private void Window_Loaded_1(object sender, RoutedEventArgs e) {
+            cboVeiculo.ItemsSource = VeiculoDAO.RetornarVeiculo();
+            cboVeiculo.DisplayMemberPath = "ModeloVeiculo";
+            cboVeiculo.SelectedValuePath = "IdVeiculo";
+        }
 
-        private Veiculo v;
-        private Button btn;
+       
 
-        private void dtgridVeiculo_LoadingRow(object sender, DataGridRowEventArgs e) {
-            v = (Veiculo)e.Row.DataContext;
-
-            if(string.IsNullOrEmpty(v.HoraSaida)) {
-                // mostrar botao
-                btn = new Button();
-                btn.Content = "Marcar Saída";
-                btn.Click += btnRegistrarSaida_Click;
-
-                // inserindo 
-
-                //dtgridVeiculo.Columns[6].Cell.Controls = btn;
-                }
-            else {
-                //mostrar textblock com a hora saida
-                }
-
-            }
+        private void cboVeiculo_SelectionChanged_1(object sender, SelectionChangedEventArgs e) {
+            int idVeiculo = (int)cboVeiculo.SelectedValue;
+            Veiculo veiculo = VeiculoDAO.BuscarVeiculoPorId(idVeiculo);
+            txtMarcaVeiculo.Text = veiculo.MarcaVeiculo;
+            txtModeloVeiculo.Text = veiculo.ModeloVeiculo;
+            txtPlacaVeiculo.Text = veiculo.PlacaVeiculo;
+            txtCorVeiculo.Text = veiculo.CorVeiculo;
+            txtEntradaVeiculo.Text = veiculo.HoraEntrada;
+            txtAnoVeiculo.Text = veiculo.AnoVeiculo;
         }
     }
+    }
+    
