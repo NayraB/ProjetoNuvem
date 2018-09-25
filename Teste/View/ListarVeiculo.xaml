@@ -15,6 +15,7 @@
                 <DataGridTextColumn Header="Ano" Binding="{Binding AnoVeiculo}" />
                 <DataGridTextColumn Header="Cor" Binding="{Binding CorVeiculo}" />
                 <DataGridTextColumn Header="Hora Entrada" Binding="{Binding HoraEntrada}" />
+                <DataGridTextColumn Header="Hora Saida" Binding="{Binding HoraSaida}" />
             </DataGrid.Columns>
         </DataGrid>
         <Button x:Name="btn_voltar" Content="Voltar" HorizontalAlignment="Left" Margin="212,248,0,0" VerticalAlignment="Top" Width="179" Height="31" Click="btn_voltar_Click"/>
