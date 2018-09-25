@@ -38,7 +38,7 @@ namespace Teste.View {
 
         private void Window_Loaded_1(object sender, RoutedEventArgs e) {
             cboVeiculo.ItemsSource = VeiculoDAO.RetornarVeiculo();
-            cboVeiculo.DisplayMemberPath = "ModeloVeiculo";
+            cboVeiculo.DisplayMemberPath = "DescricaoComboModelo";
             cboVeiculo.SelectedValuePath = "IdVeiculo";
         }
 
@@ -51,8 +51,9 @@ namespace Teste.View {
             txtModeloVeiculo.Text = veiculo.ModeloVeiculo;
             txtPlacaVeiculo.Text = veiculo.PlacaVeiculo;
             txtCorVeiculo.Text = veiculo.CorVeiculo;
-            txtEntradaVeiculo.Text = veiculo.HoraEntrada;
             txtAnoVeiculo.Text = veiculo.AnoVeiculo;
+            lbHoraEntrada.Content = veiculo.HoraEntrada;
+
         }
     }
     }
