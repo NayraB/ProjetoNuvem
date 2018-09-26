@@ -29,6 +29,7 @@
         <TextBox x:Name="txtAnoVeiculo" HorizontalAlignment="Left" Height="24" Margin="336,103,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Label Content="Cor" HorizontalAlignment="Left" Margin="258,126,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtCorVeiculo" HorizontalAlignment="Left" Height="24" Margin="336,132,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        
         <!--<Label Content="Entrada" HorizontalAlignment="Left" Margin="252,178,0,0" VerticalAlignment="Top"/>-->
         <!--invisivel-->
         <TextBox x:Name="txtEntradaVeiculo" HorizontalAlignment="Left" Height="24" Margin="336,180,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>

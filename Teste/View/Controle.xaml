@@ -12,7 +12,7 @@
         <Label Content="Dados do Veículo" HorizontalAlignment="Left" Margin="26,56,0,0" VerticalAlignment="Top"/>
 
         <Label Content="Marca" HorizontalAlignment="Left" Margin="20,92,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btnMarcarSaida" Click="btnMarcarSaida_Click_1" Content="Marcar Saida" HorizontalAlignment="Left" Margin="381,232,0,0" VerticalAlignment="Top" Width="75" Height="40" />
+        <Button x:Name="btnMarcarSaida" Click="btnMarcarSaida_Click_1" Content="Marcar Saida" HorizontalAlignment="Left" Margin="360,202,0,0" VerticalAlignment="Top" Width="75" Height="40" />
         <TextBox x:Name="txtMarcaVeiculo" HorizontalAlignment="Left" Height="24" Margin="104,94,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="txtModeloVeiculo" HorizontalAlignment="Left" Height="22" Margin="104,123,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Label Content="Modelo" HorizontalAlignment="Left" Margin="19,123,0,0" VerticalAlignment="Top"/>
@@ -24,14 +24,15 @@
         <TextBox x:Name="txtCorVeiculo" HorizontalAlignment="Left" Height="24" Margin="104,208,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.558,2.583"/>
         <TextBox x:Name="txtEntradaVeiculo" HorizontalAlignment="Left" Height="24" Margin="336,180,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
 
-        <Button x:Name="btn_voltar" Content="Voltar" HorizontalAlignment="Left" Margin="277,232,0,0" VerticalAlignment="Top" Width="75" Click="btn_voltar_Click" Height="40" RenderTransformOrigin="0.613,-0.299"/>
+        <Button x:Name="btn_voltar" Content="Voltar" HorizontalAlignment="Left" Margin="256,202,0,0" VerticalAlignment="Top" Width="75" Click="btn_voltar_Click" Height="40" RenderTransformOrigin="0.613,-0.299"/>
         <Grid>
             <Label Content="Hora Entrada" HorizontalAlignment="Left" Margin="251,67,0,0" VerticalAlignment="Top"/>
             <Label Content="Hora Saída" HorizontalAlignment="Left" Margin="251,96,0,0" VerticalAlignment="Top"/>
-            <TextBox x:Name="txtHoraSaida" HorizontalAlignment="Left" Height="24" Margin="336,98,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.558,2.583"/>
-            <Label Content="Total R$" HorizontalAlignment="Left" Margin="278,190,0,0" VerticalAlignment="Top"/>
-            <Label x:Name="lblValorTotal"  Content="00"   HorizontalAlignment="Left" Margin="336,190,0,0" VerticalAlignment="Top"/>
+            <Label Content="Total R$" HorizontalAlignment="Left" Margin="278,167,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="lblValorTotal"  Content="00"   HorizontalAlignment="Left" Margin="336,167,0,0" VerticalAlignment="Top"/>
             <Label x:Name="lblHoraEntrada" Content="00" HorizontalAlignment="Left" Margin="336,67,0,0" VerticalAlignment="Top"/>
+            <Button x:Name="btnSalvar" Content="Salvar" Click="btnSalvar_Click" HorizontalAlignment="Left" Margin="306,252,0,0" VerticalAlignment="Top" Width="75"/>
+            <Label x:Name="lblHoraSaida" Content="00" HorizontalAlignment="Left" Margin="336,96,0,0" VerticalAlignment="Top"/>
 
         </Grid>
 
