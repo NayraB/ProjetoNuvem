@@ -21,9 +21,10 @@ namespace Teste.Model {
         public DateTime? HoraSaida { get; set; }
         public Double? Total { get; set; }
 
-
         public int IdCliente { get; set; }
         public virtual Cliente _Cliente { get; set; }
+
+        public int IdEstacionamento { get; set; }
 
         public virtual string DescricaoCombo {
             get {
@@ -36,8 +37,6 @@ namespace Teste.Model {
                 return ModeloVeiculo + " - " + _Cliente.NomeCliente;
             }
         }
-
-
 
 
     }

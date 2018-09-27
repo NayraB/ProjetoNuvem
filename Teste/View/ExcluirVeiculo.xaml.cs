@@ -60,7 +60,7 @@ namespace Teste.View
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            cboListarVeiculo.ItemsSource = VeiculoDAO.RetornarVeiculo();
+            cboListarVeiculo.ItemsSource = VeiculoDAO.RetornarVeiculo(EstacionamentoStatic.estacionamento.IdEstacionamento);
             cboListarVeiculo.DisplayMemberPath = "ModeloVeiculo";
             cboListarVeiculo.SelectedValuePath = "IdVeiculo";
         }
@@ -74,8 +74,8 @@ namespace Teste.View
         {
             
             int idVeiculo = (int)cboListarVeiculo.SelectedValue;
-            Veiculo veiculo = VeiculoDAO.BuscarVeiculoPorId(idVeiculo);
-            Cliente cliente = ClienteDAO.BuscarClientePorId(idVeiculo);
+            Veiculo veiculo = VeiculoDAO.BuscarVeiculoPorId(idVeiculo, EstacionamentoStatic.estacionamento.IdEstacionamento);
+            Cliente cliente = ClienteDAO.BuscarClientePorId(idVeiculo, EstacionamentoStatic.estacionamento.IdEstacionamento);
 
             lblModeloVeiculo.Content = veiculo.ModeloVeiculo;
             lblPlaca.Content = veiculo.PlacaVeiculo;

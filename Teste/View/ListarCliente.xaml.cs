@@ -30,7 +30,7 @@ namespace Teste.View
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
 
-            dtgridCliente.ItemsSource = ClienteDAO.RetornarCliente();
+            dtgridCliente.ItemsSource = ClienteDAO.RetornarCliente(EstacionamentoStatic.estacionamento.IdEstacionamento);
             dtgridCliente.DisplayMemberPath = "NomeCliente";
             dtgridCliente.DisplayMemberPath = "SobrenomeCliente";
             

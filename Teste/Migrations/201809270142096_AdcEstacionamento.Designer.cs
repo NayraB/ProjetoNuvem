@@ -7,13 +7,13 @@ namespace Teste.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class mudandoTipoDasVariaveis_1 : IMigrationMetadata
+    public sealed partial class AdcEstacionamento : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(mudandoTipoDasVariaveis_1));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(AdcEstacionamento));
         
         string IMigrationMetadata.Id
         {
-            get { return "201809251423491_mudandoTipoDasVariaveis_1"; }
+            get { return "201809270142096_AdcEstacionamento"; }
         }
         
         string IMigrationMetadata.Source

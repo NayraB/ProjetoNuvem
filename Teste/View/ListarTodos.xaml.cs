@@ -28,7 +28,7 @@ namespace Teste.View
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             // criar um metodo para listar todos os veículos e clientes
-            dtgridTodos.ItemsSource = VeiculoDAO.RetornarVeiculo();
+            dtgridTodos.ItemsSource = VeiculoDAO.RetornarVeiculo(EstacionamentoStatic.estacionamento.IdEstacionamento);
             
             dtgridTodos.DisplayMemberPath = "IdVeiculo";
 

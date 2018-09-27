@@ -35,21 +35,14 @@ namespace Teste.View
         {
 
             int idVeiculo = (int)cboVeiculo.SelectedValue;
-            Veiculo veiculo = VeiculoDAO.BuscarVeiculoPorId(idVeiculo);
+            Veiculo veiculo = VeiculoDAO.BuscarVeiculoPorId(idVeiculo, EstacionamentoStatic.estacionamento.IdEstacionamento);
 
             DateTime dhSaida = DateTime.Now;
             lblHoraSaida.Content = dhSaida.ToString("HH:mm");
             DateTime dhEntrada = veiculo.HoraEntrada;
             lblHoraEntrada.Content = dhEntrada.ToString("HH:mm");
 
-            string SaidaString = dhSaida.ToString("HH:mm");
-            string EntradaString = dhEntrada.ToString("HH:mm");
-
-            DateTime SaidaDateTime = dhSaida;
-            DateTime EntradaDateTime = dhEntrada;
-
-            dhSaida = DateTime.ParseExact(SaidaString, "HH:mm", System.Globalization.CultureInfo.InvariantCulture);
-            dhEntrada = DateTime.ParseExact(EntradaString, "HH:mm", System.Globalization.CultureInfo.InvariantCulture);
+            
 
             //string[] splitHora = veiculo.HoraEntrada.Split(':');
 
@@ -78,7 +71,7 @@ namespace Teste.View
 
         private void Window_Loaded_1(object sender, RoutedEventArgs e)
         {
-            cboVeiculo.ItemsSource = VeiculoDAO.RetornarVeiculo();
+            cboVeiculo.ItemsSource = VeiculoDAO.RetornarVeiculoSemSaida(EstacionamentoStatic.estacionamento.IdEstacionamento);
             cboVeiculo.DisplayMemberPath = "DescricaoComboModelo";
             cboVeiculo.SelectedValuePath = "IdVeiculo";
         }
@@ -87,7 +80,7 @@ namespace Teste.View
         {
             // fazer um if para aparecer só os veículos que não têm hora de saída
             int idVeiculo = (int)cboVeiculo.SelectedValue;
-            Veiculo veiculo = VeiculoDAO.BuscarVeiculoPorId(idVeiculo);
+            Veiculo veiculo = VeiculoDAO.BuscarVeiculoPorId(idVeiculo, EstacionamentoStatic.estacionamento.IdEstacionamento);
             lblHoraSaida.Content = veiculo.HoraSaida;
             lblHoraEntrada.Content = veiculo.HoraEntrada.ToString("HH:mm");
             lblValorTotal.Content = veiculo.Total;
@@ -95,7 +88,7 @@ namespace Teste.View
             txtModeloVeiculo.Text = veiculo.ModeloVeiculo;
             txtPlacaVeiculo.Text = veiculo.PlacaVeiculo;
             txtCorVeiculo.Text = veiculo.CorVeiculo;
-            txtEntradaVeiculo.Text = veiculo.HoraEntrada.ToString("HH:mm");
+            //txtEntradaVeiculo.Text = veiculo.HoraEntrada.ToString("HH:mm");
             txtAnoVeiculo.Text = veiculo.AnoVeiculo.ToString();
 
         }
@@ -108,27 +101,17 @@ namespace Teste.View
             && !string.IsNullOrEmpty(txtAnoVeiculo.Text)
             && !string.IsNullOrEmpty(txtCorVeiculo.Text)
             //&& !string.IsNullOrEmpty(txtEntradaVeiculo.Text)
-            && !string.IsNullOrEmpty(txtPlacaVeiculo.Text))
+            && !string.IsNullOrEmpty(txtPlacaVeiculo.Text)
+            && cboVeiculo.SelectedItem != null)
             {
+                Veiculo VeiculoNovo = (Veiculo)this.cboVeiculo.SelectedItem;
 
-                Veiculo veiculo = new Veiculo
-                {
-                    IdVeiculo = int.Parse(cboVeiculo.SelectedValue.ToString()),
-                    //IdCliente = int.Parse(txtNomeCliente.Text),
-                    ModeloVeiculo = txtModeloVeiculo.Text,
-                    MarcaVeiculo = txtMarcaVeiculo.Text,
-                    AnoVeiculo = txtAnoVeiculo.Text,
-                    CorVeiculo = txtCorVeiculo.Text,
-                    HoraEntrada = DateTime.Parse(lblHoraEntrada.Content.ToString()),
-                    HoraSaida = DateTime.Parse(lblHoraSaida.Content.ToString()),
-                    /*DateTime.Now.ToString("dd/MM/yyyy")*/
-                    PlacaVeiculo = txtPlacaVeiculo.Text
+                VeiculoNovo.HoraSaida = DateTime.Parse(lblHoraSaida.Content.ToString());
+                VeiculoNovo.Total = Double.Parse(lblValorTotal.Content.ToString());
 
-
-                };
 
                 // construir o VeiculoDAO
-                if (VeiculoDAO.CadastrarVeiculo(veiculo))
+                if (VeiculoDAO.EditarVeiculo(VeiculoNovo))
                 {
                     MessageBox.Show("Salvo com sucesso!",
                         "SGAutomotiva",

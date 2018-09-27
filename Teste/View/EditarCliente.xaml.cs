@@ -32,7 +32,7 @@ namespace Teste.View
 
             int idCliente = (int)cboEditarCliente.SelectedValue;
 
-            Cliente clienteEditado = ClienteDAO.BuscarClientePorId(idCliente);
+            Cliente clienteEditado = ClienteDAO.BuscarClientePorId(idCliente, EstacionamentoStatic.estacionamento.IdEstacionamento);
 
             // pegando dado da tela e armazenando em uma variavel copia
             clienteEditado.NomeCliente = txtNomeEditar.Text;
@@ -69,7 +69,7 @@ namespace Teste.View
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             int idCliente = (int)cboEditarCliente.SelectedValue;
-            Cliente cliente = ClienteDAO.BuscarClientePorId(idCliente);
+            Cliente cliente = ClienteDAO.BuscarClientePorId(idCliente, EstacionamentoStatic.estacionamento.IdEstacionamento);
             txtNomeEditar.Text = cliente.NomeCliente;
             txtSobrenomeEditar.Text = cliente.SobrenomeCliente;
             txtTelefoneCliente.Text = cliente.TelefoneCliente;
@@ -78,7 +78,7 @@ namespace Teste.View
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            cboEditarCliente.ItemsSource = ClienteDAO.RetornarCliente();
+            cboEditarCliente.ItemsSource = ClienteDAO.RetornarCliente(EstacionamentoStatic.estacionamento.IdEstacionamento);
             cboEditarCliente.DisplayMemberPath = "NomeCliente";
             // Caminho que vai ser acionado para o Selected Value
             // Propriedade que vai ser utilizada quando meu Selected Value for acionado!!!!!!!!*********

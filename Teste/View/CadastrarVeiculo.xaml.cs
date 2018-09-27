@@ -23,6 +23,7 @@ namespace Teste.View
     {
         public CadastrarVeiculo()
         {
+            // adicionar estacionamento em todos os contrutores
             InitializeComponent();
         }
 
@@ -45,8 +46,9 @@ namespace Teste.View
                     CorVeiculo = txtCorVeiculo.Text,
                     HoraEntrada = DateTime.Now,
                     /*DateTime.Now.ToString("dd/MM/yyyy")*/
-                    PlacaVeiculo = txtPlacaVeiculo.Text
-                    
+                    PlacaVeiculo = txtPlacaVeiculo.Text,
+                    IdEstacionamento = EstacionamentoStatic.estacionamento.IdEstacionamento
+
 
                 };
 
@@ -82,7 +84,7 @@ namespace Teste.View
         {
 
             int idCliente = (int)cboCliente.SelectedValue;
-            Cliente cliente = ClienteDAO.BuscarClientePorId(idCliente);
+            Cliente cliente = ClienteDAO.BuscarClientePorId(idCliente, EstacionamentoStatic.estacionamento.IdEstacionamento);
             txtNomeCliente.Text = cliente.NomeCliente;
             txtSobrenomeCliente.Text = cliente.SobrenomeCliente;
             txtCpfCliente.Text = cliente.CpfCliente;
@@ -96,7 +98,7 @@ namespace Teste.View
        
         private void Window_Loaded_1(object sender, RoutedEventArgs e)
         {
-            cboCliente.ItemsSource = ClienteDAO.RetornarCliente();
+            cboCliente.ItemsSource = ClienteDAO.RetornarCliente(EstacionamentoStatic.estacionamento.IdEstacionamento);
             cboCliente.DisplayMemberPath = "NomeCliente";
             // Caminho que vai ser acionado para o Selected Value
             // Propriedade que vai ser utilizada quando meu Selected Value for acionado!!!!!!!!*********

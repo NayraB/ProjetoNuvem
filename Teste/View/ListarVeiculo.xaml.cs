@@ -28,7 +28,7 @@ namespace Teste.View
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             // criar um retornar veículo no DAO
-            dtgridVeiculo.ItemsSource = VeiculoDAO.RetornarVeiculo();
+            dtgridVeiculo.ItemsSource = VeiculoDAO.RetornarVeiculo(EstacionamentoStatic.estacionamento.IdEstacionamento);
             dtgridVeiculo.DisplayMemberPath = "MarcaVeiculo";
             dtgridVeiculo.DisplayMemberPath = "ModeloVeiculo";
         }

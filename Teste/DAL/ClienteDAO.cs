@@ -27,24 +27,24 @@ namespace Teste.DAL
             }
         }
 
-        public static List<Cliente> RetornarCliente()
+        public static List<Cliente> RetornarCliente(int IdEstacionamento)
         {
-            return ctx.Cliente.ToList();
+            return ctx.Cliente.Where(x=> x.IdEstacionamento == IdEstacionamento).ToList();
         }
 
-        internal static Cliente BuscarClientePorId(int idCliente)
+        internal static Cliente BuscarClientePorId(int idCliente, int IdEstacionamento)
         {
             // transforma todos os clientes em 'x' e compara com o parametro que eu espero, no caso, idCliente
-            return ctx.Cliente.FirstOrDefault(x => x.IdCliente == idCliente);
+            return ctx.Cliente.FirstOrDefault(x => x.IdCliente == idCliente && x.IdEstacionamento == IdEstacionamento);
           
         }
 
         // fazer o excluir
-        public static bool ExcluirCliente(int idCliente)
+        public static bool ExcluirCliente(int idCliente, int IdEstacionamento)
         {
             try
             {
-                Cliente cliente = BuscarClientePorId(idCliente);
+                Cliente cliente = BuscarClientePorId(idCliente, IdEstacionamento);
                 ctx.Cliente.Remove(cliente);
                 ctx.SaveChanges();
                 return true;

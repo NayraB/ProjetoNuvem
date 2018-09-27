@@ -35,7 +35,7 @@ namespace Teste.View
             //Cliente cliente = ClienteDAO.BuscarClientePorId(IdCliente);
 
             // verifica se o metodo do ClienteDAO é verdadeiro
-            if (ClienteDAO.ExcluirCliente(idCliente)){
+            if (ClienteDAO.ExcluirCliente(idCliente, EstacionamentoStatic.estacionamento.IdEstacionamento)){
 
 
                 VeiculoDAO.ExcluirVeiculosPorClienteID(idCliente);
@@ -63,7 +63,7 @@ namespace Teste.View
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
 
-            cboListarCliente.ItemsSource = ClienteDAO.RetornarCliente();
+            cboListarCliente.ItemsSource = ClienteDAO.RetornarCliente(EstacionamentoStatic.estacionamento.IdEstacionamento);
             cboListarCliente.DisplayMemberPath = "NomeCliente";
             cboListarCliente.SelectedValuePath = "IdCliente";
 

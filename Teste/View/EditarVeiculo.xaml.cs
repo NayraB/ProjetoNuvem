@@ -31,7 +31,7 @@ namespace Teste.View
 
             int idVeiculo = (int)cboEditarVeiculo.SelectedValue;
 
-            Veiculo veiculoEditado = VeiculoDAO.BuscarVeiculoPorId(idVeiculo);
+            Veiculo veiculoEditado = VeiculoDAO.BuscarVeiculoPorId(idVeiculo, EstacionamentoStatic.estacionamento.IdEstacionamento);
 
             // pegando dado da tela e armazenando em uma variavel copia
             veiculoEditado.MarcaVeiculo = txtMarcaVeiculo.Text;
@@ -70,7 +70,7 @@ namespace Teste.View
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             int idVeiculo = (int)cboEditarVeiculo.SelectedValue;
-            Veiculo veiculo = VeiculoDAO.BuscarVeiculoPorId(idVeiculo);
+            Veiculo veiculo = VeiculoDAO.BuscarVeiculoPorId(idVeiculo, EstacionamentoStatic.estacionamento.IdEstacionamento);
             txtMarcaVeiculo.Text = veiculo.MarcaVeiculo;
             txtModeloVeiculo.Text = veiculo.ModeloVeiculo;
             txtPlacaVeiculo.Text = veiculo.PlacaVeiculo;
@@ -81,7 +81,7 @@ namespace Teste.View
 
         private void Window_Loaded(object sender, RoutedEventArgs e) {
 
-            cboEditarVeiculo.ItemsSource = VeiculoDAO.RetornarVeiculo();
+            cboEditarVeiculo.ItemsSource = VeiculoDAO.RetornarVeiculo(EstacionamentoStatic.estacionamento.IdEstacionamento);
             cboEditarVeiculo.DisplayMemberPath = "DescricaoCombo";
             cboEditarVeiculo.SelectedValuePath = "IdVeiculo";
         }

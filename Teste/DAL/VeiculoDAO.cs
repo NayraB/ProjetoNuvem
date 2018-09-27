@@ -26,26 +26,46 @@ namespace Teste.DAL
             }
         }
 
-        
-
-        public static List<Veiculo> RetornarVeiculo()
+        // Testando método para sobrescrever o veículo
+        public static bool SalvarVeiculoNovo(Veiculo v)
         {
-            return ctx.Veiculo.ToList();
+            try
+            {
+                ctx.Veiculo.Add(v);
+                ctx.SaveChanges();
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
         }
 
-        internal static Veiculo BuscarVeiculoPorId(int idVeiculo)
+
+
+        public static List<Veiculo> RetornarVeiculo(int idEstacionamento)
+        {
+            return ctx.Veiculo.Where(x=> x.IdEstacionamento == idEstacionamento).ToList();
+        }
+
+        public static List<Veiculo> RetornarVeiculoSemSaida(int idEstacionamento)
+        {
+            return ctx.Veiculo.Where(x => x.IdEstacionamento == idEstacionamento && x.HoraSaida == null).ToList();
+        }
+
+        internal static Veiculo BuscarVeiculoPorId(int idVeiculo, int idEstacionamento)
         {
             // transforma todos os veiculos em 'x' e compara com o parametro que eu espero, no caso, idVeiculo
-            return ctx.Veiculo.FirstOrDefault(x => x.IdVeiculo == idVeiculo);
-
+            return ctx.Veiculo.FirstOrDefault(x => x.IdVeiculo == idVeiculo && x.IdEstacionamento == idEstacionamento);
         }
+
 
         // fazer o excluir
         public static bool ExcluirVeiculo(int idVeiculo)
         {
             try
             {
-                Veiculo veiculo = BuscarVeiculoPorId(idVeiculo);
+                Veiculo veiculo = ctx.Veiculo.FirstOrDefault(x => x.IdVeiculo == idVeiculo);
                 ctx.Veiculo.Remove(veiculo);
                 ctx.SaveChanges();
                 return true;

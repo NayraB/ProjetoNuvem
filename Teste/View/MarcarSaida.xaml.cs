@@ -29,7 +29,7 @@ namespace Teste.View {
 
             int idVeiculo = (int)cboEditarVeiculo.SelectedValue;
 
-            Veiculo veiculoEditado = VeiculoDAO.BuscarVeiculoPorId(idVeiculo);
+            Veiculo veiculoEditado = VeiculoDAO.BuscarVeiculoPorId(idVeiculo, EstacionamentoStatic.estacionamento.IdEstacionamento);
 
             //veiculoEditado.HoraSaida = txtHoraSaida.Text = DateTime.Now.ToLongTimeString();
 
@@ -58,7 +58,7 @@ namespace Teste.View {
 
         private void Window_Loaded(object sender, RoutedEventArgs e) 
             {
-            cboEditarVeiculo.ItemsSource = VeiculoDAO.RetornarVeiculo();
+            cboEditarVeiculo.ItemsSource = VeiculoDAO.RetornarVeiculo(EstacionamentoStatic.estacionamento.IdEstacionamento);
             cboEditarVeiculo.DisplayMemberPath = "ModeloVeiculo";
             // Caminho que vai ser acionado para o Selected Value
             // Propriedade que vai ser utilizada quando meu Selected Value for acionado!!!!!!!!*********
@@ -70,7 +70,7 @@ namespace Teste.View {
         private void cboEditarVeiculo_SelectionChanged(object sender, SelectionChangedEventArgs e)
             {
             int idVeiculo = (int)cboEditarVeiculo.SelectedValue;
-            Veiculo veiculo = VeiculoDAO.BuscarVeiculoPorId(idVeiculo);
+            Veiculo veiculo = VeiculoDAO.BuscarVeiculoPorId(idVeiculo, EstacionamentoStatic.estacionamento.IdEstacionamento);
             lblSaida.Content = DateTime.Now.ToLongTimeString();
             //lblTotal.Content = lblSaida - ;
 

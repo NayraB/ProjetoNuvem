@@ -19,6 +19,7 @@ namespace Teste.DAL
             //Mapear classes que vão virar tabelas no banco
             public DbSet<Cliente> Cliente { get; set; }
             public DbSet<Veiculo> Veiculo { get; set; }
+            public DbSet<Estacionamento> Estacionamento { get; set; }
 
         //public object Veiculo { get; internal set; }
 

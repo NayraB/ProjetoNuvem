@@ -67,68 +67,26 @@
     </Compile>
     <Compile Include="DAL\ClienteDAO.cs" />
     <Compile Include="DAL\Context.cs" />
+    <Compile Include="DAL\EstacionamentoDAO.cs" />
+    <Compile Include="DAL\EstacionamentoStatic.cs" />
     <Compile Include="DAL\Singleton.cs" />
     <Compile Include="DAL\VeiculoDAO.cs" />
-    <Compile Include="Migrations\201806221810487_Teste1.cs" />
-    <Compile Include="Migrations\201806221810487_Teste1.Designer.cs">
-      <DependentUpon>201806221810487_Teste1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201806221831009_Teste2.cs" />
-    <Compile Include="Migrations\201806221831009_Teste2.Designer.cs">
-      <DependentUpon>201806221831009_Teste2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201806230337309_IncluindoSobrenome.cs" />
-    <Compile Include="Migrations\201806230337309_IncluindoSobrenome.Designer.cs">
-      <DependentUpon>201806230337309_IncluindoSobrenome.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201809041232378_mudandoAsClassesIncluindoVeiculo.cs" />
-    <Compile Include="Migrations\201809041232378_mudandoAsClassesIncluindoVeiculo.Designer.cs">
-      <DependentUpon>201809041232378_mudandoAsClassesIncluindoVeiculo.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201809041253463_mudandoOTipoDaClasse.cs" />
-    <Compile Include="Migrations\201809041253463_mudandoOTipoDaClasse.Designer.cs">
-      <DependentUpon>201809041253463_mudandoOTipoDaClasse.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201809041343437_mudando1.cs" />
-    <Compile Include="Migrations\201809041343437_mudando1.Designer.cs">
-      <DependentUpon>201809041343437_mudando1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201809111247568_adicionandoCliente.cs" />
-    <Compile Include="Migrations\201809111247568_adicionandoCliente.Designer.cs">
-      <DependentUpon>201809111247568_adicionandoCliente.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201809160248078_AdcCampoNoVeiculo.cs" />
-    <Compile Include="Migrations\201809160248078_AdcCampoNoVeiculo.Designer.cs">
-      <DependentUpon>201809160248078_AdcCampoNoVeiculo.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201809181348276_AdcHoraSaidaNoVeiculo.cs" />
-    <Compile Include="Migrations\201809181348276_AdcHoraSaidaNoVeiculo.Designer.cs">
-      <DependentUpon>201809181348276_AdcHoraSaidaNoVeiculo.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201809181412265_AdcTotalNoVeiculo.cs" />
-    <Compile Include="Migrations\201809181412265_AdcTotalNoVeiculo.Designer.cs">
-      <DependentUpon>201809181412265_AdcTotalNoVeiculo.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201809201252450_nomeClienteMaisNomeCarro.cs" />
-    <Compile Include="Migrations\201809201252450_nomeClienteMaisNomeCarro.Designer.cs">
-      <DependentUpon>201809201252450_nomeClienteMaisNomeCarro.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201809251226565_AdcDescricaoComboVeiculo.cs" />
-    <Compile Include="Migrations\201809251226565_AdcDescricaoComboVeiculo.Designer.cs">
-      <DependentUpon>201809251226565_AdcDescricaoComboVeiculo.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201809251423491_mudandoTipoDasVariaveis_1.cs" />
-    <Compile Include="Migrations\201809251423491_mudandoTipoDasVariaveis_1.Designer.cs">
-      <DependentUpon>201809251423491_mudandoTipoDasVariaveis_1.cs</DependentUpon>
+    <Compile Include="Migrations\201809270142096_AdcEstacionamento.cs" />
+    <Compile Include="Migrations\201809270142096_AdcEstacionamento.Designer.cs">
+      <DependentUpon>201809270142096_AdcEstacionamento.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Cliente.cs" />
+    <Compile Include="Model\Estacionamento.cs" />
     <Compile Include="Model\Veiculo.cs" />
     <Compile Include="View\Cadastrar.xaml.cs">
       <DependentUpon>Cadastrar.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\CadastrarCliente.xaml.cs">
       <DependentUpon>CadastrarCliente.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\CadastrarEstacionamento.xaml.cs">
+      <DependentUpon>CadastrarEstacionamento.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\CadastrarVeiculo.xaml.cs">
       <DependentUpon>CadastrarVeiculo.xaml</DependentUpon>
@@ -166,6 +124,9 @@
     <Compile Include="View\ListarVeiculo.xaml.cs">
       <DependentUpon>ListarVeiculo.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\MarcarSaida.xaml.cs">
       <DependentUpon>MarcarSaida.xaml</DependentUpon>
     </Compile>
@@ -190,44 +151,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EmbeddedResource Include="Migrations\201806221810487_Teste1.resx">
-      <DependentUpon>201806221810487_Teste1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201806221831009_Teste2.resx">
-      <DependentUpon>201806221831009_Teste2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201806230337309_IncluindoSobrenome.resx">
-      <DependentUpon>201806230337309_IncluindoSobrenome.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201809041232378_mudandoAsClassesIncluindoVeiculo.resx">
-      <DependentUpon>201809041232378_mudandoAsClassesIncluindoVeiculo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201809041253463_mudandoOTipoDaClasse.resx">
-      <DependentUpon>201809041253463_mudandoOTipoDaClasse.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201809041343437_mudando1.resx">
-      <DependentUpon>201809041343437_mudando1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201809111247568_adicionandoCliente.resx">
-      <DependentUpon>201809111247568_adicionandoCliente.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201809160248078_AdcCampoNoVeiculo.resx">
-      <DependentUpon>201809160248078_AdcCampoNoVeiculo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201809181348276_AdcHoraSaidaNoVeiculo.resx">
-      <DependentUpon>201809181348276_AdcHoraSaidaNoVeiculo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201809181412265_AdcTotalNoVeiculo.resx">
-      <DependentUpon>201809181412265_AdcTotalNoVeiculo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201809201252450_nomeClienteMaisNomeCarro.resx">
-      <DependentUpon>201809201252450_nomeClienteMaisNomeCarro.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201809251226565_AdcDescricaoComboVeiculo.resx">
-      <DependentUpon>201809251226565_AdcDescricaoComboVeiculo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201809251423491_mudandoTipoDasVariaveis_1.resx">
-      <DependentUpon>201809251423491_mudandoTipoDasVariaveis_1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201809270142096_AdcEstacionamento.resx">
+      <DependentUpon>201809270142096_AdcEstacionamento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -248,6 +173,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\CadastrarCliente.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\CadastrarEstacionamento.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -296,6 +225,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\ListarVeiculo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Login.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

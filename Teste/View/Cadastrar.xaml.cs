@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Teste.DAL;
+using Teste.Model;
 
 namespace Teste.View
 {
@@ -19,8 +21,10 @@ namespace Teste.View
     /// </summary>
     public partial class Cadastrar : Window
     {
+       
         public Cadastrar()
         {
+            
             InitializeComponent();
         }
 

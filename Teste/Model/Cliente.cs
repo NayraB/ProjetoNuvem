@@ -11,12 +11,12 @@ namespace Teste.Model
     [Table("Cliente")]
     class Cliente
     {
-       
-            [Key]
-            public int IdCliente { get; set; }
-            public string NomeCliente { get; set; }
-            public string SobrenomeCliente { get; set; }
-            public string TelefoneCliente { get; set; }
-            public string CpfCliente { get; set; }
+        [Key]
+        public int IdCliente { get; set; }
+        public string NomeCliente { get; set; }
+        public string SobrenomeCliente { get; set; }
+        public string TelefoneCliente { get; set; }
+        public string CpfCliente { get; set; }
+        public int IdEstacionamento { get; set; }
     }
 }
