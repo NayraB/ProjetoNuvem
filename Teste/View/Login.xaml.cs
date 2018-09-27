@@ -28,7 +28,7 @@ namespace Teste.View
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
-            Estacionamento estacionamento = EstacionamentoDAO.ValidarLogin(txtUsuario.Text, txtSenha.Text);
+            Estacionamento estacionamento = EstacionamentoDAO.ValidarLogin(txtUsuario.Text, txtSenha.Password);
             if (estacionamento != null)
             {
                 EstacionamentoStatic.estacionamento = estacionamento;

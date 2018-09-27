@@ -5,14 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Teste.View"
         mc:Ignorable="d"
-        Title="Login" Height="450" Width="800">
-    <Grid>
-        <Label x:Name="lblUsuario" Content="Usuário" HorizontalAlignment="Left" Margin="81,78,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblSenha" Content="Senha" HorizontalAlignment="Left" Margin="81,125,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtUsuario" HorizontalAlignment="Left" Height="23" Margin="192,78,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtSenha" HorizontalAlignment="Left" Height="23" Margin="192,136,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btnLogin" Content="Login" Click="btnLogin_Click" HorizontalAlignment="Left" Margin="141,239,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="btnCadastrar" Content="Cadastrar" Click="btnCadastrar_Click" HorizontalAlignment="Left" Margin="141,278,0,0" VerticalAlignment="Top" Width="75"/>
+        Title="Login" Height="414.219" Width="473.592">
+    <Grid Margin="0,0,2.667,1.667">
+        <Grid.Background>
+            <ImageBrush ImageSource="/Image/login.jpg"/>
+        </Grid.Background>
+        <TextBox x:Name="txtUsuario" HorizontalAlignment="Left" Height="28" Margin="177,132,0,0" TextWrapping="Wrap" Text="Usuário" VerticalAlignment="Top" Width="120" Background="White"/>
+        <Button x:Name="btnLogin" Content="Login" Click="btnLogin_Click" HorizontalAlignment="Left" Margin="124,227,0,0" VerticalAlignment="Top" Width="232" Background="#FF2983B7" Height="43" Foreground="White"/>
+        <Button x:Name="btnCadastrar" FontSize="10px" Content="Cadastrar" Click="btnCadastrar_Click" HorizontalAlignment="Left" Margin="243,345,0,0" VerticalAlignment="Top" Width="94"/>
+        <PasswordBox x:Name="txtSenha"  HorizontalAlignment="Left" Margin="177,185,0,0" VerticalAlignment="Top" Width="120" Height="28" Background="White"/>
 
     </Grid>
 </Window>

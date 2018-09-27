@@ -245,5 +245,11 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\tela_principal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\login.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
