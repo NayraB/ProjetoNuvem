@@ -5,14 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Teste.View"
         mc:Ignorable="d"
-        Title="Excluir Cliente" Height="179.104" Width="296.567" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">
+        Title="Excluir Cliente" Height="188.631" Width="299.107" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="Black" Offset="0"/>
+            <GradientStop Color="#FFF97B7B" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
     <Grid>
         <ComboBox 
             x:Name="cboListarCliente" HorizontalAlignment="Left" 
             Margin="10,49,0,0" VerticalAlignment="Top" Width="267" Height="37">
         </ComboBox>
-        <Label Content="Selecione o cliente que deseja excluir:" HorizontalAlignment="Left" Margin="10,18,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btnExcluirCliente" Content="Excluir" Click="btnExcluirCliente_Click" Margin="188,100,12,16"/>
-        <Button x:Name="btn_voltar" Content="Voltar" HorizontalAlignment="Left" Margin="10,100,0,0" VerticalAlignment="Top" Width="89" Height="32" Click="btn_voltar_Click"/>
+        <Label Content="Selecione o cliente que deseja excluir:" HorizontalAlignment="Left" Margin="10,18,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Button x:Name="btnExcluirCliente" Content="Excluir" Click="btnExcluirCliente_Click" Margin="188,100,12,26">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="btn_voltar" Content="Voltar" HorizontalAlignment="Left" Margin="10,100,0,0" VerticalAlignment="Top" Width="89" Height="32" Click="btn_voltar_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
     </Grid>
 </Window>

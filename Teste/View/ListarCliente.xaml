@@ -5,10 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Teste.View"
         mc:Ignorable="d"
-        Title="ListarCliente" Height="324.645" Width="592.808" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">
+        Title="ListarCliente" Height="357.645" Width="621.308" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">
     <Grid Margin="0,0,2,17">
-        <DataGrid CanUserAddRows="False" IsReadOnly="True" HorizontalAlignment="Left" x:Name="dtgridCliente" Height="237" Margin="10,10,0,0" VerticalAlignment="Top" Width="565"/>
-        <Button x:Name="btn_voltar" Content="Voltar" HorizontalAlignment="Left" Height="25" Margin="210,260,0,-8" VerticalAlignment="Top" Width="179" Click="button_Click"/>
+        <DataGrid CanUserAddRows="False" IsReadOnly="True" HorizontalAlignment="Left" x:Name="dtgridCliente" Height="237" Margin="10,10,0,0" VerticalAlignment="Top" Width="591"/>
+        <Button x:Name="btn_voltar" Content="Voltar" HorizontalAlignment="Left" Height="40" Margin="210,260,0,0" VerticalAlignment="Top" Width="196" Click="button_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
 
     </Grid>
 </Window>

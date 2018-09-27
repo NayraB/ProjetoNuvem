@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Teste.View"
         mc:Ignorable="d"
-        Title="Login" Height="414.219" Width="473.592">
+        Title="Login" Height="414.219" Width="473.592" WindowStartupLocation="CenterScreen">
     <Grid Margin="0,0,2.667,1.667">
         <Grid.Background>
             <ImageBrush ImageSource="/Image/login.jpg"/>
@@ -14,6 +14,7 @@
         <Button x:Name="btnLogin" Content="Login" Click="btnLogin_Click" HorizontalAlignment="Left" Margin="124,227,0,0" VerticalAlignment="Top" Width="232" Background="#FF2983B7" Height="43" Foreground="White"/>
         <Button x:Name="btnCadastrar" FontSize="10px" Content="Cadastrar" Click="btnCadastrar_Click" HorizontalAlignment="Left" Margin="243,345,0,0" VerticalAlignment="Top" Width="94"/>
         <PasswordBox x:Name="txtSenha"  HorizontalAlignment="Left" Margin="177,185,0,0" VerticalAlignment="Top" Width="120" Height="28" Background="White"/>
+        <Button x:Name="btnSair" Content="Sair" HorizontalAlignment="Left" Margin="25,341,0,0" VerticalAlignment="Top" Width="51" Click="btnSair_Click" Height="24" Background="{x:Null}" Foreground="#FFFCFCFC"/>
 
     </Grid>
 </Window>

@@ -5,13 +5,40 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Teste.View"
         mc:Ignorable="d"
-        Title="Listar" Height="300" Width="300" WindowStartupLocation="CenterScreen">
+        Title="Listar" Height="312.766" Width="300" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="Black" Offset="0"/>
+            <GradientStop Color="#FFF98989" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
     <Grid>
-        <Button x:Name="btnListarCliente" Content="Cliente" HorizontalAlignment="Left" Margin="69,10,0,0" VerticalAlignment="Top" Width="152" Height="57" Click="btnListarCliente_Click"/>
-        <Button x:Name="btnListarVeiculo" Content="Veículo" HorizontalAlignment="Left" Margin="69,72,0,0" VerticalAlignment="Top" Width="152" Height="57" Click="btnListarVeiculo_Click"/>
-        <Button x:Name="btnVoltar" Content="Voltar" HorizontalAlignment="Left" Margin="42,206,0,0" VerticalAlignment="Top" Width="75" Click="btnVoltar_Click" />
-        <Button x:Name="btnSair" Content="Sair" HorizontalAlignment="Left" Margin="183,206,0,0" VerticalAlignment="Top" Width="75" Click="btnSair_Click"/>
-        <Button x:Name="btnListarTodos" Click="btnListarTodos_Click" Content="Todos" HorizontalAlignment="Left" Margin="69,134,0,0" VerticalAlignment="Top" Width="152" Height="57" />
+
+        <Button x:Name="btnListarCliente" Content="Cliente" HorizontalAlignment="Left" Margin="63,34,0,0" VerticalAlignment="Top" Width="152" Height="57" Click="btnListarCliente_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="btnListarVeiculo" Content="Veículo" HorizontalAlignment="Left" Margin="63,96,0,0" VerticalAlignment="Top" Width="152" Height="57" Click="btnListarVeiculo_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="btnVoltar" Content="Voltar" HorizontalAlignment="Left" Margin="36,230,0,0" VerticalAlignment="Top" Width="75" Click="btnVoltar_Click" >
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="btnSair" Content="Sair" HorizontalAlignment="Left" Margin="177,230,0,0" VerticalAlignment="Top" Width="75" Click="btnSair_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="btnListarTodos" Click="btnListarTodos_Click" Content="Todos" HorizontalAlignment="Left" Margin="63,158,0,0" VerticalAlignment="Top" Width="152" Height="57" >
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
 
     </Grid>
 

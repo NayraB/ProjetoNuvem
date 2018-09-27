@@ -5,18 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Teste.View"
         mc:Ignorable="d"
-        Title="CadastrarEstacionamento" Height="268.415" Width="305.685" Background="#FFFA9898">
+        Title="CadastrarEstacionamento" Height="268.415" Width="305.685" Background="#FFFA9898" WindowStartupLocation="CenterScreen">
     <Grid Margin="0,0,3.333,3.667">
         <Label x:Name="lblUsuario" Content="Usuário" HorizontalAlignment="Left" Margin="60,75,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lblSenha" Content="Senha" HorizontalAlignment="Left" Margin="68,118,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtUsuario" HorizontalAlignment="Left" Height="23" Margin="126,75,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Background="#FFE45252"/>
-        <TextBox x:Name="txtSenha" HorizontalAlignment="Left" Height="23" Margin="126,121,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Background="#FFE45252"/>
         <Button x:Name="btnCadastrar" Click="btnCadastrar_Click" Content="Cadastrar" HorizontalAlignment="Left" Margin="90,168,0,0" VerticalAlignment="Top" Width="99" Height="36" Background="#FFCECECE">
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>
         </Button>
-        <Label x:Name="label" Content="Digite seu usuário e senha para cadastro:" HorizontalAlignment="Left" Margin="35,27,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label" Content="Digite seu usuário e senha para cadastro:" HorizontalAlignment="Left" Margin="35,27,0,0" VerticalAlignment="Top" Height="27"/>
+        <PasswordBox Name="txtSenha" HorizontalAlignment="Left" Margin="126,121,0,0" VerticalAlignment="Top" Width="120" Height="23" Background="#FFE45252"/>
 
     </Grid>
 </Window>

@@ -5,37 +5,58 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Teste.View"
         mc:Ignorable="d"
-        Title="CadastrarVeiculo" Height="300.622" Width="484.255" Loaded="Window_Loaded_1" WindowStartupLocation="CenterScreen">
+        Title="CadastrarVeiculo" Height="278.122" Width="589.255" Loaded="Window_Loaded_1" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="Black" Offset="0"/>
+            <GradientStop Color="#FFFF8080" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Window.Foreground>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="Black" Offset="0"/>
+            <GradientStop Color="#FFF56F6F" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Foreground>
     <Grid Margin="0,0,10,7">
-        <Label Content="Marca" HorizontalAlignment="Left" Margin="252,16,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btnCadastrarVeiculo" Click="btnCadastrarVeiculo_Click" Content="Cadastrar" HorizontalAlignment="Left" Margin="381,188,0,0" VerticalAlignment="Top" Width="75" Height="40" />
-        <TextBox x:Name="txtMarcaVeiculo" HorizontalAlignment="Left" Height="24" Margin="336,18,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtModeloVeiculo" HorizontalAlignment="Left" Height="22" Margin="336,47,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Modelo" HorizontalAlignment="Left" Margin="251,47,0,0" VerticalAlignment="Top"/>
-        <Label Content="Placa" HorizontalAlignment="Left" Margin="253,74,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtPlacaVeiculo" HorizontalAlignment="Left" Height="24" Margin="336,74,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <ComboBox x:Name="cboCliente" HorizontalAlignment="Left" Margin="116,19,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cboCliente_SelectionChanged" DisplayMemberPath="NomeCliente" SelectedValuePath="IdCliente" />
-        <Label x:Name="lblCliente" Content="Procurar cliente" HorizontalAlignment="Left" Margin="10,15,0,0" VerticalAlignment="Top"/>
-        <Label Content="Dados do cliente" HorizontalAlignment="Left" Margin="26,56,0,0" VerticalAlignment="Top"/>
-        <Label Content="Nome" HorizontalAlignment="Left" Margin="16,82,0,0" VerticalAlignment="Top"/>
+        <Label Content="Marca" HorizontalAlignment="Left" Margin="252,86,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Button x:Name="btnCadastrarVeiculo" Click="btnCadastrarVeiculo_Click" Content="Cadastrar" HorizontalAlignment="Left" Margin="486,190,0,0" VerticalAlignment="Top" Width="75" Height="32" >
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <TextBox x:Name="txtMarcaVeiculo" HorizontalAlignment="Left" Height="24" Margin="336,88,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtModeloVeiculo" HorizontalAlignment="Left" Height="22" Margin="336,117,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Modelo" HorizontalAlignment="Left" Margin="251,117,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label Content="Placa" HorizontalAlignment="Left" Margin="253,144,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <TextBox x:Name="txtPlacaVeiculo" HorizontalAlignment="Left" Height="24" Margin="336,144,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="cboCliente" HorizontalAlignment="Left" Margin="116,19,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cboCliente_SelectionChanged" DisplayMemberPath="NomeCliente" SelectedValuePath="IdCliente" Background="White" />
+        <Label x:Name="lblCliente" Content="Procurar cliente" HorizontalAlignment="Left" Margin="10,15,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label Content="Dados do cliente" HorizontalAlignment="Left" Margin="16,51,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label Content="Nome" HorizontalAlignment="Left" Margin="16,82,0,0" VerticalAlignment="Top" Foreground="White"/>
         <TextBox x:Name="txtNomeCliente" IsReadOnly="True" HorizontalAlignment="Left" Height="24" Margin="100,84,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="txtSobrenomeCliente" IsReadOnly="True" HorizontalAlignment="Left" Height="22" Margin="100,124,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Sobrenome" HorizontalAlignment="Left" Margin="16,120,0,0" VerticalAlignment="Top"/>
-        <Label Content="CPF" HorizontalAlignment="Left" Margin="16,162,0,0" VerticalAlignment="Top"/>
+        <Label Content="Sobrenome" HorizontalAlignment="Left" Margin="16,120,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label Content="CPF" HorizontalAlignment="Left" Margin="16,162,0,0" VerticalAlignment="Top" Foreground="White"/>
         <TextBox x:Name="txtCpfCliente" IsReadOnly="True" HorizontalAlignment="Left" Height="24" Margin="100,162,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Telefone" HorizontalAlignment="Left"  Margin="16,202,0,0" VerticalAlignment="Top"/>
+        <Label Content="Telefone" HorizontalAlignment="Left"  Margin="16,202,0,0" VerticalAlignment="Top" Foreground="White"/>
         <TextBox x:Name="txtTelefoneCliente" IsReadOnly="True" HorizontalAlignment="Left" Height="24" Margin="100,204,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Ano" HorizontalAlignment="Left" Margin="258,100,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtAnoVeiculo" HorizontalAlignment="Left" Height="24" Margin="336,103,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Cor" HorizontalAlignment="Left" Margin="258,126,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtCorVeiculo" HorizontalAlignment="Left" Height="24" Margin="336,132,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        
+        <Label Content="Ano" HorizontalAlignment="Left" Margin="258,170,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <TextBox x:Name="txtAnoVeiculo" HorizontalAlignment="Left" Height="24" Margin="336,173,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Cor" HorizontalAlignment="Left" Margin="258,196,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <TextBox x:Name="txtCorVeiculo" HorizontalAlignment="Left" Height="24" Margin="336,202,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+
         <!--<Label Content="Entrada" HorizontalAlignment="Left" Margin="252,178,0,0" VerticalAlignment="Top"/>-->
         <!--invisivel-->
         <TextBox x:Name="txtEntradaVeiculo" HorizontalAlignment="Left" Height="24" Margin="336,180,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
         <!--<Label x:Name="lblHoraAtual" Content="Label" HorizontalAlignment="Left" Margin="336,178,0,0" VerticalAlignment="Top"/>-->
 
-        <Button x:Name="btn_voltar" Content="Voltar" HorizontalAlignment="Left" Margin="278,188,0,0" VerticalAlignment="Top" Width="75" Click="btn_voltar_Click" Height="40" RenderTransformOrigin="0.613,-0.299"/>
+        <Button x:Name="btn_voltar" Content="Voltar" Margin="486,149,10,0" VerticalAlignment="Top" Click="btn_voltar_Click" Height="31" RenderTransformOrigin="0.613,-0.299">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Label Content="Dados do veículo" HorizontalAlignment="Left" Margin="251,51,0,0" VerticalAlignment="Top" Foreground="White"/>
 
     </Grid>
 </Window>

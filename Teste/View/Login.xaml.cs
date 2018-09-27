@@ -48,5 +48,9 @@ namespace Teste.View
             CadastrarEstacionamento tela = new CadastrarEstacionamento();
             tela.ShowDialog();
         }
-    }
+
+        private void btnSair_Click(object sender, RoutedEventArgs e) {
+            Environment.Exit(0);
+            }
+        }
 }

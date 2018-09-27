@@ -76,7 +76,7 @@ namespace Teste.View
                         MessageBoxImage.Information);
 
             }
-            this.Close();
+            
 
         }
 

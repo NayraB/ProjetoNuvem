@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Teste.View"
         mc:Ignorable="d"
-        Title="Listar Todos" Height="327.195" Width="592.808" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">
+        Title="Listar Todos" Height="358.695" Width="679.808" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">
     <Grid Margin="0,0,2,17">
-        <DataGrid CanUserAddRows="False" IsReadOnly="True" HorizontalAlignment="Left" x:Name="dtgridTodos" Height="226" Margin="10,10,0,0" VerticalAlignment="Top" Width="565" AutoGenerateColumns="False">
+        <DataGrid CanUserAddRows="False" IsReadOnly="True" HorizontalAlignment="Left" x:Name="dtgridTodos" Height="226" Margin="10,10,0,0" VerticalAlignment="Top" Width="647" AutoGenerateColumns="False">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="ID Veículo" Binding="{Binding IdVeiculo}" />
                 <DataGridTextColumn Header="ID Cliente" Binding="{Binding IdCliente}" />
@@ -20,7 +20,11 @@
                 <DataGridTextColumn Header="Valor Total" Binding="{Binding Total}" />
             </DataGrid.Columns>
         </DataGrid>
-        <Button x:Name="btn_voltar" Content="Voltar" HorizontalAlignment="Left" Margin="212,248,0,0" VerticalAlignment="Top" Width="179" Height="31" Click="btn_voltar_Click"/>
+        <Button x:Name="btn_voltar" Content="Voltar" HorizontalAlignment="Left" Margin="260,257,0,0" VerticalAlignment="Top" Width="179" Height="31" Click="btn_voltar_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
 
     </Grid>
 </Window>

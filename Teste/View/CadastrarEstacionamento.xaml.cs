@@ -31,11 +31,15 @@ namespace Teste.View
             Estacionamento estacionamento = new Estacionamento
             {
                 Login = txtUsuario.Text,
-                Senha = txtSenha.Text
-
+                Senha = txtSenha.Password
+                
             };
 
             EstacionamentoDAO.CadastrarEstacionamento(estacionamento);
+            MessageBox.Show("Usuário cadastrado com sucesso!",
+                        "SGAutomotiva",
+                        MessageBoxButton.OK,
+                        MessageBoxImage.Information);
             this.Close();
         }
     }

@@ -7,10 +7,14 @@
         mc:Ignorable="d"
         Title="Listar" Height="300" Width="300" WindowStartupLocation="CenterScreen">
     <Grid>
-        <Button x:Name="btnVoltar" Content="Voltar" HorizontalAlignment="Left" Margin="42,206,0,0" VerticalAlignment="Top" Width="75" Click="btnVoltar_Click" />
-        <Button x:Name="btnSair" Content="Sair" HorizontalAlignment="Left" Margin="183,206,0,0" VerticalAlignment="Top" Width="75" Click="btnSair_Click"/>
-        <Button x:Name="btnExcluirCliente" Click="btnExcluirCliente_Click" Content="Cliente" HorizontalAlignment="Left" Margin="87,46,0,0" VerticalAlignment="Top" Width="115" Height="45"/>
-        <Button x:Name="btnExcluirVeiculo" Click="btnExcluirVeiculo_Click" Content="Veiculo" HorizontalAlignment="Left" Margin="87,111,0,0" VerticalAlignment="Top" Width="115" Height="43"/>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Image/tela_principal.jpg"/>
+        </Grid.Background>
+        <Button x:Name="btnVoltar" Content="Voltar" HorizontalAlignment="Left" Margin="59,177,0,0" VerticalAlignment="Top" Width="75" Click="btnVoltar_Click" />
+        <Button x:Name="btnSair" Content="Sair" HorizontalAlignment="Left" Margin="59,212,0,0" VerticalAlignment="Top" Width="75" Click="btnSair_Click"/>
+        <Button x:Name="btnExcluirCliente" Click="btnExcluirCliente_Click" Content="Cliente" HorizontalAlignment="Left" Margin="42,55,0,0" VerticalAlignment="Top" Width="105" Height="24"/>
+        <Button x:Name="btnExcluirVeiculo" Click="btnExcluirVeiculo_Click" Content="Veiculo" HorizontalAlignment="Left" Margin="42,96,0,0" VerticalAlignment="Top" Width="105" Height="25"/>
+        <Label Content="Selecione uma opção:" HorizontalAlignment="Left" Margin="30,24,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 

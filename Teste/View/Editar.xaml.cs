@@ -42,9 +42,9 @@ namespace Teste.View
             this.Close();
         }
 
-        private void btnSair_Click(object sender, RoutedEventArgs e)
-        {
+       
+        private void btnSair_Click_1(object sender, RoutedEventArgs e) {
             Environment.Exit(0);
+            }
         }
-    }
 }

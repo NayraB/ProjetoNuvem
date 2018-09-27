@@ -40,13 +40,14 @@
                 <DropShadowEffect/>
             </Button.Effect>
         </Button>
-        <Button x:Name="btnSair" Content="Sair" HorizontalAlignment="Left" Margin="65,281,0,0" VerticalAlignment="Top" Width="51" Click="button_Click" Height="24" Background="{x:Null}" Foreground="#FFFCFCFC" Grid.Column="1"/>
+        <Button x:Name="btnSair" Content="Sair" HorizontalAlignment="Left" Margin="67,258,0,0" VerticalAlignment="Top" Width="51" Click="button_Click" Height="24" Background="{x:Null}" Foreground="#FFFCFCFC" Grid.Column="1"/>
         <Button x:Name="btnControle" Content="Controle" HorizontalAlignment="Left" Margin="49,213,0,0" VerticalAlignment="Top" Width="127" Click="btnControle_Click" Height="30">
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>
         </Button>
         <Label x:Name="lblText" Content="Selecione uma opção:" HorizontalAlignment="Left" Margin="49,32,0,0" VerticalAlignment="Top" Width="127" Height="27"/>
+        <Button x:Name="btnVoltar" Content="Voltar" HorizontalAlignment="Left" Margin="67,217,0,0" VerticalAlignment="Top" Width="51" Click="btnVoltar_Click" Height="24" Background="{x:Null}" Foreground="#FFFCFCFC" Grid.Column="1"/>
 
     </Grid>
 </Window>

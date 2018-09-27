@@ -69,7 +69,7 @@ namespace Teste.View
                         MessageBoxImage.Error);
 
             }
-            this.Close();
+           
         }
 
         private void btn_voltar_Click(object sender, RoutedEventArgs e)

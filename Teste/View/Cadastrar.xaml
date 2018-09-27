@@ -6,11 +6,33 @@
         xmlns:local="clr-namespace:Teste.View"
         mc:Ignorable="d"
         Title="Cadastrar" Height="300" Width="300" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="Black" Offset="0"/>
+            <GradientStop Color="#FFF56F6F" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
     <Grid>
-        <Button x:Name="btnCadastrarCliente" Content="Cliente" HorizontalAlignment="Left" Margin="69,37,0,0" VerticalAlignment="Top" Width="152" Height="57" Click="btnCadastrarCliente_Click"/>
-        <Button x:Name="btnCadastrarVeiculo" Content="Veículo" HorizontalAlignment="Left" Margin="69,107,0,0" VerticalAlignment="Top" Width="152" Height="57" Click="btnCadastrarVeiculo_Click"/>
-        <Button x:Name="btnVoltar" Content="Voltar" HorizontalAlignment="Left" Margin="42,206,0,0" VerticalAlignment="Top" Width="75" Click="btnVoltar_Click" />
-        <Button x:Name="btnSair" Content="Sair" HorizontalAlignment="Left" Margin="183,206,0,0" VerticalAlignment="Top" Width="75" Click="btnSair_Click"/>
+        <Button x:Name="btnCadastrarCliente" Content="Cliente" HorizontalAlignment="Left" Margin="69,37,0,0" VerticalAlignment="Top" Width="152" Height="57" Click="btnCadastrarCliente_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="btnCadastrarVeiculo" Content="Veículo" HorizontalAlignment="Left" Margin="69,107,0,0" VerticalAlignment="Top" Width="152" Height="57" Click="btnCadastrarVeiculo_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="btnVoltar" Content="Voltar" HorizontalAlignment="Left" Margin="42,206,0,0" VerticalAlignment="Top" Width="75" Click="btnVoltar_Click" >
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="btnSair" Content="Sair" HorizontalAlignment="Left" Margin="183,206,0,0" VerticalAlignment="Top" Width="75" Click="btnSair_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
 
     </Grid>
     

@@ -65,5 +65,9 @@ namespace Teste.View
             Servicos tela = new Servicos();
             tela.ShowDialog();
         }
-    }
+
+        private void btnVoltar_Click(object sender, RoutedEventArgs e) {
+            this.Close();
+            }
+        }
 }
